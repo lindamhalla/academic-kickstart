@@ -33,7 +33,7 @@ interests = [
   year = 2018
 
 [[education.courses]]
-  course = "MEng in Statistics and Financial Mathematics"
+  course = "MSc in Statistics and Financial Mathematics"
   institution = "Swiss Federal Institute of Technology (EPFL)"
   year = 2014
 
