@@ -18,6 +18,16 @@ date_format = "January 2006"
 #   Required fields are `title`, `company`, and `date_start`.
 #   Leave `date_end` empty if it's your current employer.
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
+
+[[experience]]
+title = "Postdoctoral Fellow"
+company = "HEC Montreal"
+company_url = "https://www.hec.ca/en/"
+location = "Montreal"
+date_start = "2018-09-01"
+date_end = " "
+description = """ """
+
 [[experience]]
   title = "PhD representative"
   company = "CUSO"
@@ -28,11 +38,10 @@ date_format = "January 2006"
   description = """
   Responsibilities include:
   
-  * Analysing
-  * Modelling
-  * Deploying
+  * Represent PhD students' interests
+  * Organize the Young Researcher Conference
   """
-
+  
 [[experience]]
   title = "Intern"
   company = "MeteoSwiss"
