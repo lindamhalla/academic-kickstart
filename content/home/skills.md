@@ -32,11 +32,5 @@ weight = 7
   icon_pack = "fas"
   name = "Statistics"
   description = "100%"  
-  
-  # [[feature]]
-  # icon = "camera-retro"
-  # icon_pack = "fas"
-  # name = "Photography"
-  # description = "10%"
 
 +++
