@@ -60,10 +60,10 @@ interests = [
 #
 #   Full list: https://jpswalsh.github.io/academicons/
 
-# [[social]]
-# icon = "envelope"
-# icon_pack = "fas"
-# link = "#contact"  # For a direct email link, use #"mailto:test@example.org".
+ [[social]]
+ icon = "envelope"
+ icon_pack = "fas"
+ link = "#contact"  # For a direct email link, use "linda.mhalla@hec.ca".
 
 # [[social]]
 # icon = "twitter"
@@ -73,7 +73,7 @@ interests = [
 [[social]]
   icon = "google-scholar"
   icon_pack = "ai"
-  link = "https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ"
+  link = "https://scholar.google.ca/citations?user=L58vjKsAAAAJ&hl=en"
 
 [[social]]
   icon = "github"
