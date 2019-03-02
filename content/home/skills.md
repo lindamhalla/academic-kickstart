@@ -33,10 +33,10 @@ weight = 7
   name = "Statistics"
   description = "100%"  
   
-[[feature]]
-  icon = "camera-retro"
-  icon_pack = "fas"
-  name = "Photography"
-  description = "10%"
+  # [[feature]]
+  # icon = "camera-retro"
+  # icon_pack = "fas"
+  # name = "Photography"
+  # description = "10%"
 
 +++
