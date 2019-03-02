@@ -1,7 +1,7 @@
 +++
 title = "Non-Linear Models for Extremal Dependence"
 date = "2017-01-01"
-authors = ["Linda Mhalla", "V. Chavez-Demoulin", "P. Naveau"]
+authors = ["L. Mhalla", "V. Chavez-Demoulin", "P. Naveau"]
 publication_types = ["2"]
 publication = "Journal of Multivariate Analysis, (159), NA, _pp. 49--66_"
 publication_short = "Journal of Multivariate Analysis, (159), NA, _pp. 49--66_"

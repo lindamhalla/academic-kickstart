@@ -1,7 +1,7 @@
 +++
 title = "Exceedance-based nonlinear regression of tail dependence"
 date = "2019-01-01"
-authors = ["Linda Mhalla", "Thomas Opitz", "Valerie Chavez-Demoulin"]
+authors = ["L. Mhalla", "T. Opitz", "V. Chavez-Demoulin"]
 publication_types = ["2"]
 publication = "Extremes, NA, _pp. NA_, https://doi.org/10.1007/s10687-019-00342-6"
 publication_short = "Extremes, NA, _pp. NA_, https://doi.org/10.1007/s10687-019-00342-6"
