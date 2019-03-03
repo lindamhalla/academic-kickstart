@@ -49,7 +49,10 @@ date_start = "2018-09-01"
  location = "Geneva"
  date_start = "2014-09-01"
  date_end = "2018-08-31"
- description = """My PhD thesis was conducted under the supervision of Prof. Valérie Chavez-Demoulin and Prof. Elvezio Ronchetti. The main focus of my thesis was on modelling covariate-dependent tail dependencies."""
+ description = """My PhD thesis was conducted under the supervision of Prof. Valérie Chavez-Demoulin and Prof. Elvezio Ronchetti. The main focus of my thesis was on modelling covariate-dependent tail dependencies.
+ 
+ https://archive-ouverte.unige.ch/authors/view/108937
+ """
  
 [[experience]]
   title = "Intern"
