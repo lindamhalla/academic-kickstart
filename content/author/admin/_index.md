@@ -63,7 +63,7 @@ interests = [
  [[social]]
  icon = "envelope"
  icon_pack = "fas"
- link = "#contact"  # For a direct email link, use "linda.mhalla@hec.ca".
+ link = "linda.mhalla@hec.ca"  # For a direct email link, use "linda.mhalla@hec.ca".
 
 # [[social]]
 # icon = "twitter"
