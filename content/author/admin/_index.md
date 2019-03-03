@@ -89,3 +89,4 @@ link = "files/Mhalla_cv.pdf"
 
 +++
 
+My research interests include extreme value theory and its application to environmental data, smooth modelling, and causal inference.
