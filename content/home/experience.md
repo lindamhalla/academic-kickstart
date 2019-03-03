@@ -40,7 +40,16 @@ date_start = "2018-09-01"
   * Represent PhD students' interests
   * Organize the Young Researcher Conference
   """
-  
+ 
+ [[experience]]
+ title = "PhD student"
+ company = "University of Geneva"
+ company_url = ""
+ location = "Geneva"
+ date_start = "2014-09-01"
+ date_end = "2018-08-31"
+ description = """My PhD thesis was conducted under the supervision of Prof. Valérie Chavez-Demoulin and Prof. Elvezio Ronchetti. The main focus of my thesis was on modelling covariate-dependent tail dependencies."""
+ 
 [[experience]]
   title = "Intern"
   company = "MeteoSwiss"
