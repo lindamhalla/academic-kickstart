@@ -25,6 +25,7 @@ company = "HEC Montreal"
 company_url = "https://www.hec.ca/en/"
 location = "Montreal"
 date_start = "2018-09-01"
+ description = """Under the supervision of Prof. Debbie Dupuis"""
 
 
 [[experience]]
@@ -57,6 +58,6 @@ date_start = "2018-09-01"
   location = "Payerne"
   date_start = "2013-09-01"
   date_end = "2014-01-31"
-  description = """Modelling of extreme Ozone values in the troposphere."""
+  description = """I conducted a data analysis of total and partial ozone columns and modelled the associated extreme values."""
 
 +++
