@@ -25,8 +25,7 @@ company = "HEC Montreal"
 company_url = "https://www.hec.ca/en/"
 location = "Montreal"
 date_start = "2018-09-01"
-date_end = " "
-description = """ """
+
 
 [[experience]]
   title = "PhD representative"
