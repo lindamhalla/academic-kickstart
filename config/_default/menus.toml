@@ -10,7 +10,7 @@
 
 [[main]]
   name = "Publications"
-  url = "#recent_publications"
+  url = "#publications"
   weight = 2
 
 [[main]]
