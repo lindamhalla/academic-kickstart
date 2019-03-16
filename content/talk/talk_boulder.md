@@ -5,5 +5,6 @@ authors = [L. Mhalla]
 location = "Boulder, Colorado, USA"
 event = "Workshop on Uncertainty and Causality Assessment in Modeling Extreme and Rare Events"
 event_url = "https://www2.cisl.ucar.edu/events/workshops/toy2016"
+featured = false
 +++
 
