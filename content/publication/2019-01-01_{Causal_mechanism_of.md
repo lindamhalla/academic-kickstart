@@ -1,5 +1,5 @@
 +++
-title = "{Causal mechanism of extreme river discharges in the upper Danube basin network}"
+title = "Causal mechanism of extreme river discharges in the upper Danube basin network"
 date = "2019-01-01"
 authors = ["L Mhalla", "V. Chavez-Demoulin", "D.J. Dupuis"]
 publication_types = ["2"]
