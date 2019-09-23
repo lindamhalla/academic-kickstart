@@ -1,0 +1,1159 @@
+plot(iris.cla,what= "train&test", newdata = X.test)
+X.test
+test
+seq(1,nrow(iris),by=1)[!which((1:nrow(iris)) %in% train)]
+which((1:nrow(iris)) !%in% train)
+which(!((1:nrow(iris)) %in% train))
+#split of the data#
+train <- sample(1:nrow(iris),100,replace=FALSE)#
+test  <- seq(1,nrow(iris),by=1)[which(!((1:nrow(iris)) %in% train))]#
+#
+X.train <- iris[train,-5]#
+Class.train <- iris[train,5]#
+X.test <- iris[test,-5]#
+Class.test <- iris[test,5]#
+#
+#density estimation#
+iris.est <- densityMclust(X.train)#
+summary(iris.est)
+plot(iris.est, what="density", type="image", col="dodgerblue4", grid=100)
+#classification#
+iris.cla <- MclustDA(data= X.train, class= Class.train)#
+summary(iris.cla,parameters=TRUE)
+summary(iris.cla, newdata=X.test, newclass=Class.test)
+plot(iris.cla,what= "classification")
+quartz()
+plot(iris.cla,what= "classification", newdata = X.test)
+plot(iris.cla,what= "train&test", newdata = X.test)
+plot(iris.cla,what= "classification", dimens=4)
+plot(iris.cla,what= "classification", dimens=3)
+data("iris")#
+#
+#split of the data into a training set and a test set#
+Iris <- split(p=2/3, Dataset = iris, class = 5)#
+#
+#estimation of the gaussian finite mixture based on the training set#
+iris.est <- REBMIX(model="REBMVNORM", Dataset=Iris@train, Preprocessing = "Parzen window", cmax =10, Criterion ="BIC")#
+#
+#classification#
+iris.cla <- RCLSMIX(model="RCLSMVNORM", x= list(iris.est), Dataset= Iris@test, Zt= Iris@Zt)
+plot(iris.cla)
+plot(iris.cla, nrow=3, ncol=2)
+data(examScor)
+install.packages("MVT")
+library("MVT")
+data(examScor)
+head(examScor)
+cor(examScor[,1],examScor[,2], method="spearman")
+examScor[,1]
+cor(examScor[,1],examScor[,2], method="spearman")
+cor(examScor[,1],examScor[,2], method="pearson")
+install.packages("rrcov")#
+library("rrcov")
+?cov.rob
+library("MASS")
+?cov.rob
+cov.rob(examScor[,1],examScor[,2])
+cov.rob(examScor[,1],examScor[,2],cor=TRUE)
+cov.rob(examScor[,1],examScor[,2],cor=TRUE,method="mcd")
+cov.rob(examScor[,1],examScor[,3],cor=TRUE,method="mcd")
+?cov2cor
+cor(examScor[,1],examScor[,2], method="kendall")
+cor(examScor[,1],examScor[,2], method="spearman")
+cor(examScor[,1],examScor[,2], method="pearson")
+sin((pi/2)*cor(examScor[,1],examScor[,2], method="kendall"))
+head(examScor)
+cor(examScor[,3],examScor[,5], method="kendall")#
+cor(examScor[,3],examScor[,5], method="spearman")#
+cor(examScor[,3],examScor[,5], method="pearson")#
+#
+sin((pi/2)*cor(examScor[,1],examScor[,2], method="kendall"))
+install.packages("mvtnorm")#
+library("mvtnorm")
+rmvt(100, sigma = diag(2), df = 3)
+X <- rmvt(100, sigma = diag(2), df = 3)
+cor(X[,1],X[,2],method="kendall")
+cor(X[,1],X[,2],method="spearman")
+cor(X[,1],X[,2],method="pearson")
+cor(c(X[,1],14),c(X[,2],100),method="pearson")
+sin((pi/2)*cor(c(X[,1],14),c(X[,2],100),method="pearson"))
+sin((pi/2)*cor(c(X[,1],14),c(X[,2],100),method="kendall"))
+diag(2)
+3/(sd(X[,1]*sd(X[,2])))
+set.seed(22)#
+X <- rmvt(100, sigma = 2*diag(2), df = 3)#
+#
+cor(c(X[,1],14),c(X[,2],100),method="pearson")#
+cor(X[,1],X[,2],method="spearman")#
+cor(X[,1],X[,2],method="kendall")#
+sin((pi/2)*cor(c(X[,1],14),c(X[,2],100),method="kendall"))
+set.seed(22)#
+X <- rmvt(100, sigma = 2*diag(2), df = 3)#
+#
+cor(c(X[,1],14),c(X[,2],100),method="pearson")#
+cor(X[,1],X[,2],method="spearman")#
+cor(X[,1],X[,2],method="kendall")#
+sin((pi/2)*cor(X[,1],X[,2],method="kendall"))
+pi
+cor(X[,1],X[,2],method="pearson")
+sin((pi/2)*cor(c(X[,1],14),c(X[,2],100),method="kendall"))
+cor(c(X[,1],14),c(X[,2],100),method="pearson")
+?rmvt
+cov2cor(matrix(c(4, 2, 2, 3), ncol=2))
+X <- rmvt(100, sigma = matrix(c(4, 2, 2, 3), ncol=2), df = 3)
+X
+cor(X[,1],X[,2],method="pearson")#
+cor(X[,1],X[,2],method="spearman")#
+cor(X[,1],X[,2],method="kendall")
+set.seed(22)#
+X <- rmvt(300, sigma = matrix(c(4, 2, 2, 3), ncol=2), df = 3)#
+cor(X[,1],X[,2],method="pearson")#
+cor(X[,1],X[,2],method="spearman")#
+cor(X[,1],X[,2],method="kendall")
+cor(c(X[,1],14),c(X[,2],100),method="pearson")
+cor(c(X[,1],50),c(X[,2],100),method="pearson")
+cor(c(X[,1],50),c(X[,2],-10),method="pearson")
+sin((pi/2)*cor(c(X[,1],50),c(X[,2],-10),method="kendall"))
+cov2cor(matrix(c(4, 2, 2, 3), ncol=2))[2,2]
+cov2cor(matrix(c(4, 2, 2, 3), ncol=2))[1,2]
+?rmvt
+matrix(c(4, 2, 2, 3), ncol=2)
+?rmvt
+cov2cor(3*matrix(c(4, 2, 2, 3), ncol=2))[1,2]
+plot(X[,1],X[,2])
+plot(X[,1],X[,2],xlim=c(-13,51))
+points(c(50,-10),col=2)
+points(c(500,-10),col=2)
+plot(X[,1],X[,2],xlim=c(-13,51))
+points(c(500,-10),col=2)
+plot(X[,1],X[,2],xlim=c(-13,51))
+head(X)
+X
+points(c(50,10))
+plot(X[,1],X[,2],xlim=c(-13,51))
+points(c(50,10),col=2)
+points(c(50,-10),col=2)
+points(c(5,-10),col=2)
+plot(c(X[,1],50),c(X[,2],-10))
+points(50,-10,col=2)
+plot(X[,1],X[,2],xlim=c(-13,51))
+points(50,-10,col=2)
+dat <- rbind(c(72,50,8,0.5,1,57,57,12.5,0.9),#
+             c(66.5,48,15,1.0,2,100,54,17,0.5),#
+             c(54,57,14,1.0,3,100,32,16.5,0.7),#
+             c(67,60,15,0.9,4,96.5,65,20.5,0.9),#
+             c(44,57,14,0.3,5,79,51,18,0.9),#
+             c(41,52,18,1.9,6,78.5,53,18,1.2),#
+             c(34.5,50,4,0.5,7,48,50,21,1.6),#
+             c(34.5,46,8.5,1.0,8,155,44,20.5,1.4),#
+             c(24,54,3,1.2,9,84,64,13,0.8),#
+             c(NA,NA,NA,NA,10,105,35,17,1.8))#
+#
+dat.c <- dat[-10,1:4]#
+dat.p <- dat[,5:8]
+n <- nrow(dat.c)#
+p <- 4#
+xbar <- apply(dat.c,2,mean)#
+Sig  <- var(dat.c)#
+mu0  <- c(49,53,11,1)#
+t2   <- (n-1)*t(xbar-mu0)%*%solve(Sig)%*%(xbar-mu0)#
+((n-1)*p/(n-p))*qf(1-0.05, df1=p, df2=n-p)
+install.packages("SymPy")
+f.w <- function(w){#
+	(1/(1-w))*(log((1-w))^2)*((((1-w)^(-1/alpha))+(w^(-1/alpha)))^(alpha-2))#
+}#
+#
+alpha <- 0.6#
+integrate(f.w,0,1)
+(alpha-2)*((alpha-1)^2)*((1/alpha)-1)*integrate(f.w,0,1)
+as.numeric(integrate(f.w,0,1))
+bla <- integrate(f.w,0,1)
+bla$value
+(alpha-2)*((alpha-1)^2)*((1/alpha)-1)*integrate(f.w,0,1)$value
+rm(alpha)
+d3 <- deriv3(~log((x - x^2)^(-1 - 1/y)*((1 - x)^(-y^(-1)) + x^(-y^(-1)))^(-2 + y)*(-1 + 1/y)),"x")#
+#
+alpha <- 0.6#
+eval.d3 <- eval(d3)#
+dl.dthetas <- attr(eval.d3, "gradient")
+warnings()
+x
+rm(x)
+d3 <- deriv3(~log((x - x^2)^(-1 - 1/y)*((1 - x)^(-y^(-1)) + x^(-y^(-1)))^(-2 + y)*(-1 + 1/y)),"x")#
+#
+alpha <- 0.6#
+eval.d3 <- eval(d3)#
+dl.dthetas <- attr(eval.d3, "gradient")
+x
+d3
+d3 <- deriv3(~log((x - x^2)^(-1 - 1/y)*((1 - x)^(-y^(-1)) + x^(-y^(-1)))^(-2 + y)*(-1 + 1/y)),"x")#
+#
+alpha <- 0.6#
+eval.d3 <- eval(d3)#
+dl.dthetas <- attr(eval.d3, "gradient")
+d3
+d3["grad"]
+?deriv3
+d3 <- deriv3(~log((x - x^2)^(-1 - 1/y)*((1 - x)^(-y^(-1)) + x^(-y^(-1)))^(-2 + y)*(-1 + 1/y)),"x",func="TRUE")
+d3
+?deriv3
+d3 <- deriv3(~log((x - x^2)^(-1 - 1/y)*((1 - x)^(-y^(-1)) + x^(-y^(-1)))^(-2 + y)*(-1 + 1/y)),"x",function(x){})
+d3
+d3(0.4)
+x
+alpha
+d3 <- deriv3(y~log((x - x^2)^(-1 - 1/y)*((1 - x)^(-y^(-1)) + x^(-y^(-1)))^(-2 + y)*(-1 + 1/y)),"x",function(x){})
+d3(0.4)
+y
+d3 <- deriv3(~log((x - x^2)^(-1 - 1/y)*((1 - x)^(-y^(-1)) + x^(-y^(-1)))^(-2 + y)*(-1 + 1/y)),"x",function(x){})#
+#
+y <- 0.6
+d3(0.1)
+eval(d3)
+eval.d3 <- eval(d3)
+dl.dthetas <- attr(eval.d3, "gradient")
+dl.thetas
+dl.dthetas
+eval.d3
+attr(eval.d3, "gradient")
+d3 <- deriv3(~log((x - x^2)^(-1 - 1/y)*((1 - x)^(-y^(-1)) + x^(-y^(-1)))^(-2 + y)*(-1 + 1/y)),"x")#
+#
+y <- 0.6#
+eval.d3 <- eval(d3)#
+dl.dthetas <- attr(eval.d3, "gradient")
+install.packages("evd")
+library("evd")
+fbvalog
+nlbvalog
+nlgev
+?fbvevd
+load("/Users/worklinda/Dropbox/ProjetLindaMiguelVal/Simulations/VGAM_families/pBeta_vgam.Rdata")
+library("VGAM")
+pbeta.vgam.600@iter
+pbeta.vgam.600@callXm2
+pbeta.vgam.600@contrasts
+pbeta.vgam.600@smart.prediction
+B <- 600#
+t <- seq(0.8,3.3,length=B)
+n <- 20#
+set.seed(86)  # For reproducibility of the random numbers#
+ldata <- data.frame(x2 = sort(runif(n)), y = sort(runif(n)))#
+fit2 <- vgam(y ~ sm.ns(sm.scale(x2), df = 5), uninormal, data = ldata)
+fit2@smart.prediction
+plot(y ~ x2, data = ldata, main = "Smart prediction")
+lines(fitted(fit2) ~ x2, data = ldata)
+points(predict(fit2, new.ldata, type = "response") ~ x2, data = new.ldata,type = "b", col = 2, err = -1)
+new.ldata <- data.frame(x2 = seq(0, 1, len = n))
+points(predict(fit2, new.ldata, type = "response") ~ x2, data = new.ldata,type = "b", col = 2, err = -1)
+summarypvgam(pbeta.vgam.600)
+source('~/Dropbox/ProjetLindaMiguelVal/Simulations/3d_pairwiseBeta_noLink_deriv.R')#
+zero.reg <- function(v2){v2[is.na(v2) | v2< 0] <- mean(v2[v2>= 0 & !is.na(v2)]);return(v2)}#
+pBeta3d.vgam <- function(lshape1 = "loge", lshape2 = "loge", lshape3 = "loge", lshape4 = "loge", #
+                         ishape1 = NULL, ishape2=NULL, ishape3=NULL, ishape4=NULL, tol12 = 1e-04,#
+                         nsimEIM = 250, zero = NULL) #
+{#
+  lshape1 <- as.list(substitute(lshape1))#
+  eshape1 <- link2list(lshape1)#
+  lshape1 <- attr(eshape1, "function.name")#
+  lshape2 <- as.list(substitute(lshape2))#
+  eshape2 <- link2list(lshape2)#
+  lshape2 <- attr(eshape2, "function.name")#
+  lshape3 <- as.list(substitute(lshape3))#
+  eshape3 <- link2list(lshape3)#
+  lshape3 <- attr(eshape3, "function.name")#
+  lshape4 <- as.list(substitute(lshape4))#
+  eshape4 <- link2list(lshape4)#
+  lshape4 <- attr(eshape4, "function.name")#
+  if (length(ishape1) && (!is.Numeric(ishape1))) #
+    stop("bad input for argument 'ishape1'")#
+  if (length(ishape2) && !is.Numeric(ishape2)) #
+    stop("bad input for argument 'ishape2'")#
+  if (length(ishape3) && !is.Numeric(ishape3)) #
+    stop("bad input for argument 'ishape3'")#
+  if (length(ishape3) && !is.Numeric(ishape4)) #
+    stop("bad input for argument 'ishape4'")#
+  new("vglmff", blurb = c("pBeta_3d distribution\n\n", "Links:    ", #
+                          namesof("shape1", lshape1, eshape1, tag = FALSE), ", ", #
+                          namesof("shape2", lshape2, eshape2, tag = FALSE),", ", #
+                          namesof("shape3", lshape3, eshape3, tag = FALSE),", ",#
+                          namesof("shape4", lshape4, eshape4, tag = FALSE), "\n"), #
+      constraints = eval(substitute(expression({#
+        constraints <- cm.zero.VGAM(constraints, x = x, .zero, #
+                                    M = M, predictors.names = predictors.names, M1 = 4)#
+      }), list(.zero = zero))), infos = eval(substitute(function(...) {#
+        list(M1 = 4, Q1 = 2, expected = FALSE, multipleResponses = TRUE, #
+             parameters.names = c("shape1", "shape2", "shape3", "shape4"), lshape1 = .lshape1, #
+             lshape2 = .lshape2, lshape3 = .lshape3, lshape4 = .lshape4, zero = .zero)#
+      }, list(.zero = zero, .lshape1 = lshape1, .lshape2 = lshape2, .lshape3 = lshape3, .lshape4 = lshape4))), #
+      initialize = eval(substitute(expression({#
+        checklist <- w.y.check(w = w, y = y, Is.positive.y = TRUE, #
+                               ncol.w.max = Inf, ncol.y.max = Inf, out.wy = TRUE, #
+                               colsyperw = 1, maximize = TRUE)#
+        w <- checklist$w#
+        y <- checklist$y#
+        if (any((y <= 0) | (y >= 1))) stop("the response must be in (0, 1)")#
+        extra$ncoly <- ncoly <- ncol(y)#
+        extra$M1 <- M1 <- 4#
+        M <- M1 * ncoly#
+        mynames1 <- param.names("shape1", ncoly)#
+        mynames2 <- param.names("shape2", ncoly)#
+        mynames3 <- param.names("shape3", ncoly)#
+        mynames4 <- param.names("shape4", ncoly)#
+        predictors.names <- c(namesof(mynames1, .lshape1, earg = .eshape1, tag = FALSE), #
+                              namesof(mynames2, .lshape2, earg = .eshape2, tag = FALSE),#
+                              namesof(mynames3, .lshape3, earg = .eshape3, tag = FALSE),#
+                              namesof(mynames4, .lshape4, earg = .eshape4, tag = FALSE))[interleave.VGAM(M, M1 = M1)]#
+        if (!length(etastart)) {#
+          shape1.init <- .ishape1#
+          shape1.init <- matrix(shape1.init, n, ncoly, #
+                                byrow = TRUE)#
+          shape2.init <- .ishape2#
+          shape2.init <- matrix(shape2.init, n, ncoly, #
+                                byrow = TRUE)#
+          shape3.init <- .ishape3#
+          shape3.init <- matrix(shape3.init, n, ncoly, #
+                                byrow = TRUE)#
+          shape4.init <- .ishape4#
+          shape4.init <- matrix(shape4.init, n, ncoly, #
+                                byrow = TRUE)#
+          etastart <- cbind(theta2eta(shape1.init, .lshape1, earg = .eshape1), #
+                            theta2eta(shape2.init, .lshape2, earg = .eshape2),#
+                            theta2eta(shape3.init, .lshape3, earg = .eshape3),#
+                            theta2eta(shape4.init, .lshape4, earg = .eshape4))[, interleave.VGAM(M, M1 = M1)]#
+        }#
+      }), list(.lshape1 = lshape1, .lshape2 = lshape2, .lshape3 = lshape3, .lshape4 = lshape4, #
+               .ishape1 = ishape1, .ishape2 = ishape2, .ishape3 = ishape3, .ishape4 = ishape4, #
+               .eshape1 = eshape1, .eshape2 = eshape2, .eshape3 = eshape3, .eshape4 = eshape4))), #
+      linkinv = eval(substitute(function(eta, extra = NULL) {#
+                 shape1 <- eta2theta(eta[, c(TRUE, FALSE, FALSE, FALSE)], .lshape1, #
+                                     earg = .eshape1)#
+                 shape2 <- eta2theta(eta[, c(FALSE, TRUE, FALSE, FALSE)], .lshape2, #
+                                     earg = .eshape2)#
+                 shape3 <- eta2theta(eta[, c(FALSE, FALSE, TRUE, FALSE)], .lshape3, #
+                                     earg = .eshape3)#
+                 shape4 <- eta2theta(eta[, c(FALSE, FALSE, FALSE, TRUE)], .lshape4, #
+                                     earg = .eshape4)#
+               }, list(.lshape1 = lshape1, .lshape2 = lshape2, .lshape3 = lshape3, .lshape4 = lshape4, #
+                       .eshape1 = eshape1, .eshape2 = eshape2, .eshape3 = eshape3, .eshape4 = eshape4))), #
+      last = eval(substitute(expression({#
+                         misc$link <- c(rep_len(.lshape1, ncoly), rep_len(.lshape2,ncoly),#
+                                        rep_len(.lshape3, ncoly), rep_len(.lshape4, ncoly))[interleave.VGAM(M, M1 = M1)]#
+                         temp.names <- c(mynames1, mynames2, mynames3, mynames4)[interleave.VGAM(M, #
+                                                                                       M1 = M1)]#
+                         names(misc$link) <- temp.names#
+                         misc$earg <- vector("list", M)#
+                         names(misc$earg) <- temp.names#
+                         for (ii in 1:ncoly) {#
+                           misc$earg[[M1 * ii - 3]] <- .eshape1#
+                           misc$earg[[M1 * ii - 2]] <- .eshape2#
+                           misc$earg[[M1 * ii - 1]] <- .eshape3#
+                           misc$earg[[M1 * ii]]     <- .eshape4#
+                         }#
+                       }), list(.lshape1 = lshape1, .lshape2 = lshape2, .lshape3 = lshape3, .lshape4 = lshape4, #
+                                .eshape1 = eshape1, .eshape2 = eshape2, .eshape3 = eshape3, .eshape4 = eshape4))), #
+      loglikelihood = eval(substitute(function(mu, y, w, residuals = FALSE, eta, extra = NULL, summation = TRUE) {#
+                                  shape1 <- eta2theta(eta[, c(TRUE, FALSE, FALSE, FALSE)], .lshape1, #
+                                                      earg = .eshape1)#
+                                  shape2 <- eta2theta(eta[, c(FALSE, TRUE, FALSE, FALSE)], .lshape2, #
+                                                      earg = .eshape2)#
+                                  shape3 <- eta2theta(eta[, c(FALSE, FALSE, TRUE, FALSE)], .lshape3, #
+                                                      earg = .eshape3)#
+                                  shape4 <- eta2theta(eta[, c(FALSE, FALSE, FALSE, TRUE)], .lshape4, #
+                                                      earg = .eshape4)#
+                                  if (residuals) {#
+                                    stop("loglikelihood residuals not implemented yet")#
+                                  } else {#
+                                    ll.elts <- c(w) * pBeta.3d(y[,1],y[,2],shape1,shape2,shape3,shape4)#
+                                    if (summation) sum(ll.elts) else ll.elts#
+                                  }#
+                                }, list(.lshape1 = lshape1, .lshape2 = lshape2, .lshape3 = lshape3, .lshape4 = lshape4,#
+                                        .eshape1 = eshape1, .eshape2 = eshape2, .eshape3 = eshape3, .eshape4 = eshape4))), #
+      vfamily = c("pBeta3d"), validparams = eval(substitute(function(eta, #
+                                                                                                                                                      y, extra = NULL) {#
+                                          shape1 <- eta2theta(eta[, c(TRUE, FALSE, FALSE, FALSE)], .lshape1, #
+                                                              earg = .eshape1)#
+                                          shape2 <- eta2theta(eta[, c(FALSE, TRUE, FALSE, FALSE)], .lshape2, #
+                                                              earg = .eshape2)#
+                                          shape3 <- eta2theta(eta[, c(FALSE, FALSE, TRUE, FALSE)], .lshape3, #
+                                                              earg = .eshape3)#
+                                          shape4 <- eta2theta(eta[, c(FALSE, FALSE, FALSE, TRUE)], .lshape4, #
+                                                              earg = .eshape4)#
+                                          okay1 <- all(is.finite(shape1)) && all(0 < shape1) && #
+                                            all(is.finite(shape2)) && all(0 < shape2) &&#
+                                            all(is.finite(shape3)) && all(0 < shape3) &&#
+                                            all(is.finite(shape4)) && all(0 < shape4)#
+                                          okay1#
+                                        }, list(.lshape1 = lshape1, .lshape2 = lshape2, .lshape3 = lshape3, .lshape4 = lshape4, #
+                                                .eshape1 = eshape1, .eshape2 = eshape2, .eshape3 = eshape3, .eshape4 = eshape4))), #
+      simslot = eval(substitute(function(object, nsim) {#
+                                                  eta <- predict(object)#
+                                                  shape1 <- eta2theta(eta[, c(TRUE, FALSE, FALSE, FALSE)], .lshape1, #
+                                                                      earg = .eshape1)#
+                                                  shape2 <- eta2theta(eta[, c(FALSE, TRUE, FALSE, FALSE)], .lshape2, #
+                                                                      earg = .eshape2)#
+                                                  shape3 <- eta2theta(eta[, c(FALSE, FALSE, TRUE, FALSE)], .lshape3, #
+                                                                      earg = .eshape3)#
+                                                  shape4 <- eta2theta(eta[, c(FALSE, FALSE, FALSE, TRUE)], .lshape4, #
+                                                                      earg = .eshape4)#
+                                                  rpairbeta(n = nsim*length(shape1), dimData = 3, par = c(shape1,shape2,shape3,shape4))[,c(1,2)]#
+                                                }, list(.lshape1 = lshape1, .lshape2 = lshape2, .lshape3 = lshape3, .lshape4 = lshape4, #
+                                                        .eshape1 = eshape1, .eshape2 = eshape2, .eshape3 = eshape3, .eshape4 = eshape4))), #
+      deriv = eval(substitute(expression({#
+                                                          shape1 <- eta2theta(eta[, c(TRUE, FALSE, FALSE, FALSE)], .lshape1, #
+                                                                              earg = .eshape1)#
+                                                          shape2 <- eta2theta(eta[, c(FALSE, TRUE, FALSE, FALSE)], .lshape2, #
+                                                                              earg = .eshape2)#
+                                                          shape3 <- eta2theta(eta[, c(FALSE, FALSE, TRUE, FALSE)], .lshape3, #
+                                                                              earg = .eshape3)#
+                                                          shape4 <- eta2theta(eta[, c(FALSE, FALSE, FALSE, TRUE)], .lshape4, #
+                                                                              earg = .eshape4)#
+                                                          dshape1.deta <- dtheta.deta(shape1, link = .lshape1, #
+                                                                                      earg = .eshape1)#
+                                                          dshape2.deta <- dtheta.deta(shape2, link = .lshape2, #
+                                                                                      earg = .eshape2)#
+                                                          dshape3.deta <- dtheta.deta(shape3, link = .lshape3, #
+                                                                                      earg = .eshape3)#
+                                                          dshape4.deta <- dtheta.deta(shape4, link = .lshape4, #
+                                                                                      earg = .eshape4)#
+                                                          dl.dshape1 <- pBeta.3d.d1.alpha(y[,1],y[,2],shape1,shape2,shape3,shape4)#
+                                                          dl.dshape2 <- pBeta.3d.d1.beta1(y[,1],y[,2],shape1,shape2,shape3,shape4)#
+                                                          dl.dshape3 <- pBeta.3d.d1.beta2(y[,1],y[,2],shape1,shape2,shape3,shape4)#
+                                                          dl.dshape4 <- pBeta.3d.d1.beta3(y[,1],y[,2],shape1,shape2,shape3,shape4)#
+                                                          dl.deta <- c(w) * cbind(dl.dshape1 * dshape1.deta, #
+                                                                                  dl.dshape2 * dshape2.deta,#
+                                                                                  dl.dshape3 * dshape3.deta,#
+                                                                                  dl.dshape4 * dshape4.deta)#
+                                                          dl.deta[, interleave.VGAM(M, M1 = M1)]#
+                                                        }), list(.lshape1 = lshape1, .lshape2 = lshape2, .lshape3 = lshape3, .lshape4 = lshape4,  #
+                                                                 .eshape1 = eshape1, .eshape2 = eshape2,.eshape3 = eshape3,.eshape4 = eshape4))),#
+      weight = eval(substitute(expression({#
+                                                                   ned2l.dshape11 <- zero.reg(-pBeta.3d.d2.alpha(y[,1],y[,2],shape1,shape2,shape3,shape4))#
+                                                                   ned2l.dshape22 <- zero.reg(-pBeta.3d.d2.beta1(y[,1],y[,2],shape1,shape2,shape3,shape4))#
+                                                                   ned2l.dshape33 <- zero.reg(-pBeta.3d.d2.beta2(y[,1],y[,2],shape1,shape2,shape3,shape4))#
+                                                                   ned2l.dshape44 <- zero.reg(-pBeta.3d.d2.beta3(y[,1],y[,2],shape1,shape2,shape3,shape4))#
+                                                                   ned2l.dshape12 <- zero.reg(-pBeta.3d.d2.alpha.beta1(y[,1],y[,2],shape1,shape2,shape3,shape4))#
+                                                                   ned2l.dshape23 <- zero.reg(-pBeta.3d.d2.beta1.beta2(y[,1],y[,2],shape1,shape2,shape3,shape4))#
+                                                                   ned2l.dshape34 <- zero.reg(-pBeta.3d.d2.beta2.beta3(y[,1],y[,2],shape1,shape2,shape3,shape4))#
+                                                                   ned2l.dshape13 <- zero.reg(-pBeta.3d.d2.alpha.beta2(y[,1],y[,2],shape1,shape2,shape3,shape4))#
+                                                                   ned2l.dshape24 <- zero.reg(-pBeta.3d.d2.beta1.beta3(y[,1],y[,2],shape1,shape2,shape3,shape4))#
+                                                                   ned2l.dshape14 <- zero.reg(-pBeta.3d.d2.alpha.beta3(y[,1],y[,2],shape1,shape2,shape3,shape4))#
+                                                                   wz <- array(c(c(w) * ned2l.dshape11 * dshape1.deta^2,#
+                                                                                 c(w) * ned2l.dshape22 * dshape2.deta^2,#
+                                                                                 c(w) * ned2l.dshape33 * dshape3.deta^2,#
+                                                                                 c(w) * ned2l.dshape44 * dshape4.deta^2,#
+                                                                                 c(w) * ned2l.dshape12 * dshape1.deta * dshape2.deta,#
+                                                                                 c(w) * ned2l.dshape23 * dshape2.deta * dshape3.deta,#
+                                                                                 c(w) * ned2l.dshape34 * dshape3.deta * dshape4.deta,#
+                                                                                 c(w) * ned2l.dshape13 * dshape1.deta * dshape3.deta,#
+                                                                                 c(w) * ned2l.dshape24 * dshape2.deta * dshape4.deta,#
+                                                                                 c(w) * ned2l.dshape14 * dshape1.deta * dshape4.deta),#
+                                                                               dim = c(n, M/M1, 10))#
+                                                                   wz <- arwz2wz(wz, M = M, M1 = M1)#
+                                                                   c(w) * wz#
+                                                                 }), list(.lshape1 = lshape1, .lshape2 = lshape2, .lshape3 = lshape3, .lshape4 = lshape4,  #
+                                                                          .eshape1 = eshape1, .eshape2 = eshape2, .eshape3 = eshape3, .eshape4 = eshape4,#
+                                                                          .tol12 = tol12, .nsimEIM = nsimEIM))))#
+}
+summarypvgam(pbeta.vgam.600)
+coef(pbeta.vgam.600,matrix=TRUE)
+Xp <- model.matrix(pbeta.vgam.600,type="vlm")
+dim(Xp)
+b  <- coef(pbeta.vgam.600,matrix=TRUE)[,1]
+dim(b)
+b  <- coef(pbeta.vgam.600,matrix=TRUE)
+dim(b)
+Vp <- vcov(pbeta.vgam)
+Vp <- vcov(pbeta.vgam.600)
+dim(Vp)
+Xp <- model.matrix(pbeta.vgam.600,type="vlm")#
+b  <- coef(pbeta.vgam.600,matrix=TRUE)[,1]#
+Vp <- vcov(pbeta.vgam.600)
+library("MASS")
+br <- mvrnorm(10000, b, Vp)
+length(b)
+b  <- coef(pbeta.vgam.600)
+br <- mvrnorm(10000, b, Vp)
+dim(br)
+dim(Xp)
+4800/8
+b
+head(b)
+head(br[1,])
+head(br[2,])
+dim(Xp)
+dim(model.matrixvlm(pbeta.vgam.600,linpred.index=1,type="vlm"))
+dim(model.matrixvlm(pbeta.vgam.600,linpred.index=1,type="lm"))
+dim(model.matrixvlm(pbeta.vgam.600,linpred.index=4,type="lm"))
+length(b)
+184/8
+conf <- .95#
+Xp <- model.matrix(pbeta.vgam.600,linpred.index=1,type="lm")#
+b  <- coef(pbeta.vgam.600)[1:23]#
+Vp <- vcov(pbeta.vgam.600)[1:23,1:23]
+br <- mvrnorm(10000, b, Vp)
+dim(br)
+dim(t(Xp))
+calib <- br %*% t(Xp)
+calib.CI.b <- myCI(VGAM::loge(calib,inverse=TRUE))
+quantile.fun <- function(x) quantile(x, c((1 - conf)/2, #
+                                          1 - (1 - conf)/2))#
+myCI <- function(x) t(apply(x, 2, quantile.fun))
+calib.CI.b <- myCI(VGAM::loge(calib,inverse=TRUE))
+plot(calib.CI.b[,1])
+calib.CI.b <- myCI((calib,inverse=TRUE))
+calib.CI.b <- myCI(calib)
+plot(calib.CI.b[,1])
+calib.CI.b <- myCI(VGAM::loge(calib,inverse=TRUE))
+plot(calib.CI.b[,1])
+dim(calib)
+conf <- .95#
+Xp <- model.matrix(pbeta.vgam.600,type="vlm")#
+b  <- coef(pbeta.vgam.600)#
+Vp <- vcov(pbeta.vgam.600)#
+br <- mvrnorm(10000, b, Vp)#
+calib <- br %*% t(Xp)
+dim(Calib)
+dim(calib)
+calib.CI.b <- myCI(VGAM::loge(calib[,1:600],inverse=TRUE))
+plot(calib.CI.b[,1])
+length(seq(1,4800,by=23))
+b  <- coef(pbeta.vgam.600)
+length(b)
+head(b)
+seq(1,184,by8)
+seq(1,184,by=8)
+Vp <- vcov(pbeta.vgam.600)
+head(Vp)
+conf <- .95#
+Xp <- model.matrix(pbeta.vgam.600,linpred.index=1,type="lm")#
+b  <- coef(pbeta.vgam.600)[seq(1,184,by=8)]#
+Vp <- vcov(pbeta.vgam.600)[seq(1,184,by=8),seq(1,184,by=8)]#
+br <- mvrnorm(10000, b, Vp)#
+calib <- br %*% t(Xp)#
+#
+calib.CI.b <- myCI(VGAM::loge(calib,inverse=TRUE))
+plot(calib.CI.b[,1])
+lines(calib.CI.b[,2])
+lines(VGAM::loge(pbeta.vgam@predictors[,2],inverse=TRUE),col=2
+)
+lines(VGAM::loge(pbeta.vgam.600@predictors[,2],inverse=TRUE),col=2)
+lines(VGAM::loge(pbeta.vgam.600@predictors[,1],inverse=TRUE),col=2)
+seq(1,184,by=8)
+seq(2,184,by=8)
+k <- 2#
+Xp <- model.matrix(pbeta.vgam.600,linpred.index=k,type="lm")#
+b  <- coef(pbeta.vgam.600)[seq(k,184,by=8)]#
+Vp <- vcov(pbeta.vgam.600)[seq(k,184,by=8),seq(k,184,by=8)]#
+br <- mvrnorm(10000, b, Vp)#
+calib <- br %*% t(Xp)#
+#
+calib.CI.b <- myCI(VGAM::loge(calib,inverse=TRUE))#
+#
+par(mfrow=c(1,1))#
+plot(t,beta1,type="l",ylab=expression(lambda),col=2);#
+lines(t,VGAM::loge(pbeta.vgam@predictors[,k],inverse=TRUE))#
+lines(t,calib.CI.b[,1],lty=2,lwd=2)#
+lines(t,calib.CI.b[,2],lty=2,lwd=2)
+par(mfrow=c(1,1))#
+plot(t,beta1,type="l",ylab=expression(lambda),col=2);#
+lines(t,VGAM::loge(pbeta.vgam.600@predictors[,k],inverse=TRUE))#
+lines(t,calib.CI.b[,1],lty=2,lwd=2)#
+lines(t,calib.CI.b[,2],lty=2,lwd=2)
+library("mgcv")
+?gam
+sapply(c(1,2,3),function(x){2*x})
+x <- c(1,2,3)
+xp<-sapply(x,function(x){2*x})
+xp
+x
+version
+rGT
+install.packages("gamlss")
+library(gamlss)
+?rGT
+par(mfrow=c(5,2),mar=c(1,1,1,1));for(i in 1:10) plot(runif(100),main="blabla")
+?mar
+?plot
+par(mfrow=c(5,2),mar=c(1,1,3,1));for(i in 1:10) plot(runif(100),main="blabla")
+library(parallel)
+detectCores()
+bibtex_2academic <- function(bibfile,#
+                             outfold,#
+                             abstract = FALSE, #
+                             overwrite = FALSE) {#
+  require(RefManageR)#
+  require(dplyr)#
+  require(stringr)#
+  require(anytime)#
+  # Import the bibtex file and convert to data.frame#
+  mypubs   <- ReadBib(bibfile, check = "warn", .Encoding = "UTF-8") %>%#
+    as.data.frame()#
+  # assign "categories" to the different types of publications#
+  mypubs   <- mypubs %>%#
+    dplyr::mutate(#
+      pubtype = dplyr::case_when(bibtype == "Article" ~ "2",#
+                                 bibtype == "Article in Press" ~ "2",#
+                                 bibtype == "InProceedings" ~ "1",#
+                                 bibtype == "Proceedings" ~ "1",#
+                                 bibtype == "Conference" ~ "1",#
+                                 bibtype == "Conference Paper" ~ "1",#
+                                 bibtype == "MastersThesis" ~ "3",#
+                                 bibtype == "PhdThesis" ~ "3",#
+                                 bibtype == "Manual" ~ "4",#
+                                 bibtype == "TechReport" ~ "4",#
+                                 bibtype == "Book" ~ "5",#
+                                 bibtype == "InCollection" ~ "6",#
+                                 bibtype == "InBook" ~ "6",#
+                                 bibtype == "Misc" ~ "0",#
+                                 TRUE ~ "0"))#
+  # create a function which populates the md template based on the info#
+  # about a publication#
+  create_md <- function(x) {#
+    # define a date and create filename by appending date and start of title#
+    if (!is.na(x[["year"]])) {#
+      x[["date"]] <- paste0(x[["year"]], "-01-01")#
+    } else {#
+      x[["date"]] <- "2999-01-01"#
+    }#
+    filename <- paste(x[["date"]], x[["title"]] %>%#
+                        str_replace_all(fixed(" "), "_") %>%#
+                        str_remove_all(fixed(":")) %>%#
+                        str_sub(1, 20) %>%#
+                        paste0(".md"), sep = "_")#
+    # start writing#
+    if (!file.exists(file.path(outfold, filename)) | overwrite) {#
+      fileConn <- file.path(outfold, filename)#
+      write("+++", fileConn)#
+      # Title and date#
+      write(paste0("title = \"", x[["title"]], "\""), fileConn, append = T)#
+      write(paste0("date = \"", anydate(x[["date"]]), "\""), fileConn, append = T)#
+      # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.#
+      auth_hugo <- str_replace_all(x["author"], " and ", "\", \"")#
+      auth_hugo <- stringi::stri_trans_general(auth_hugo, "latin-ascii")#
+      write(paste0("authors = [\"", auth_hugo,"\"]"), fileConn, append = T)#
+      # Publication type. Legend:#
+      # 0 = Uncategorized, 1 = Conference paper, 2 = Journal article#
+      # 3 = Manuscript, 4 = Report, 5 = Book,  6 = Book section#
+      write(paste0("publication_types = [\"", x[["pubtype"]],"\"]"), #
+            fileConn, append = T)#
+      # Publication details: journal, volume, issue, page numbers and doi link#
+      publication <- x[["journal"]]#
+      if (!is.na(x[["volume"]])) publication <- paste0(publication, #
+                                                       ", (", x[["volume"]], ")")#
+      if (!is.na(x[["number"]])) publication <- paste0(publication,#
+                                                       ", ", x[["number"]])#
+      if (!is.na(x[["pages"]])) publication <- paste0(publication,#
+                                                      ", _pp. ", x[["pages"]], "_")#
+      if (!is.na(x[["doi"]])) publication <- paste0(publication,#
+                                                    ", ", paste0("https://doi.org/", #
+                                                                 x[["doi"]]))#
+      write(paste0("publication = \"", publication,"\""), fileConn, append = T)#
+      write(paste0("publication_short = \"", publication,"\""),fileConn, append = T)#
+      # Abstract and optional shortened version.#
+      if (abstract) {#
+        write(paste0("abstract = \"", x[["abstract"]],"\""), fileConn, append = T)#
+      } else {#
+        write("abstract = \"\"", fileConn, append = T)#
+      }#
+      write(paste0("abstract_short = \"","\""), fileConn, append = T)#
+      # other possible fields are kept empty. They can be customized later by #
+      # editing the created md#
+      write("image_preview = \"\"", fileConn, append = T)#
+      write("selected = false", fileConn, append = T)#
+      write("projects = []", fileConn, append = T)#
+      write("tags = []", fileConn, append = T)#
+      #links#
+      write("url_pdf = \"\"", fileConn, append = T)#
+      write("url_preprint = \"\"", fileConn, append = T)#
+      write("url_code = \"\"", fileConn, append = T)#
+      write("url_dataset = \"\"", fileConn, append = T)#
+      write("url_project = \"\"", fileConn, append = T)#
+      write("url_slides = \"\"", fileConn, append = T)#
+      write("url_video = \"\"", fileConn, append = T)#
+      write("url_poster = \"\"", fileConn, append = T)#
+      write("url_source = \"\"", fileConn, append = T)#
+      #other stuff#
+      write("math = true", fileConn, append = T)#
+      write("highlight = true", fileConn, append = T)#
+      # Featured image#
+      write("[header]", fileConn, append = T)#
+      write("image = \"\"", fileConn, append = T)#
+      write("caption = \"\"", fileConn, append = T)#
+      write("+++", fileConn, append = T)#
+    }#
+  }#
+  # apply the "create_md" function over the publications list to generate#
+  # the different "md" files.#
+  apply(mypubs, FUN = function(x) create_md(x), MARGIN = 1)#
+}#
+#
+my_bibfile <- "my_publications.bib"#
+out_fold   <- "myoutfolder"#
+#
+bibtex_2academic(bibfile  = my_bibfile, #
+                 outfold   = out_fold, #
+                 abstract  = FALSE)
+bibtex_2academic <- function(bibfile,#
+                             outfold,#
+                             abstract = FALSE, #
+                             overwrite = FALSE) {#
+  require(RefManageR)#
+  require(dplyr)#
+  require(stringr)#
+  require(anytime)#
+  # Import the bibtex file and convert to data.frame#
+  mypubs   <- ReadBib(bibfile, check = "warn", .Encoding = "UTF-8") %>%#
+    as.data.frame()#
+  # assign "categories" to the different types of publications#
+  mypubs   <- mypubs %>%#
+    dplyr::mutate(#
+      pubtype = dplyr::case_when(bibtype == "Article" ~ "2",#
+                                 bibtype == "Article in Press" ~ "2",#
+                                 bibtype == "InProceedings" ~ "1",#
+                                 bibtype == "Proceedings" ~ "1",#
+                                 bibtype == "Conference" ~ "1",#
+                                 bibtype == "Conference Paper" ~ "1",#
+                                 bibtype == "MastersThesis" ~ "3",#
+                                 bibtype == "PhdThesis" ~ "3",#
+                                 bibtype == "Manual" ~ "4",#
+                                 bibtype == "TechReport" ~ "4",#
+                                 bibtype == "Book" ~ "5",#
+                                 bibtype == "InCollection" ~ "6",#
+                                 bibtype == "InBook" ~ "6",#
+                                 bibtype == "Misc" ~ "0",#
+                                 TRUE ~ "0"))#
+  # create a function which populates the md template based on the info#
+  # about a publication#
+  create_md <- function(x) {#
+    # define a date and create filename by appending date and start of title#
+    if (!is.na(x[["year"]])) {#
+      x[["date"]] <- paste0(x[["year"]], "-01-01")#
+    } else {#
+      x[["date"]] <- "2999-01-01"#
+    }#
+    filename <- paste(x[["date"]], x[["title"]] %>%#
+                        str_replace_all(fixed(" "), "_") %>%#
+                        str_remove_all(fixed(":")) %>%#
+                        str_sub(1, 20) %>%#
+                        paste0(".md"), sep = "_")#
+    # start writing#
+    if (!file.exists(file.path(outfold, filename)) | overwrite) {#
+      fileConn <- file.path(outfold, filename)#
+      write("+++", fileConn)#
+      # Title and date#
+      write(paste0("title = \"", x[["title"]], "\""), fileConn, append = T)#
+      write(paste0("date = \"", anydate(x[["date"]]), "\""), fileConn, append = T)#
+      # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.#
+      auth_hugo <- str_replace_all(x["author"], " and ", "\", \"")#
+      auth_hugo <- stringi::stri_trans_general(auth_hugo, "latin-ascii")#
+      write(paste0("authors = [\"", auth_hugo,"\"]"), fileConn, append = T)#
+      # Publication type. Legend:#
+      # 0 = Uncategorized, 1 = Conference paper, 2 = Journal article#
+      # 3 = Manuscript, 4 = Report, 5 = Book,  6 = Book section#
+      write(paste0("publication_types = [\"", x[["pubtype"]],"\"]"), #
+            fileConn, append = T)#
+      # Publication details: journal, volume, issue, page numbers and doi link#
+      publication <- x[["journal"]]#
+      if (!is.na(x[["volume"]])) publication <- paste0(publication, #
+                                                       ", (", x[["volume"]], ")")#
+      if (!is.na(x[["number"]])) publication <- paste0(publication,#
+                                                       ", ", x[["number"]])#
+      if (!is.na(x[["pages"]])) publication <- paste0(publication,#
+                                                      ", _pp. ", x[["pages"]], "_")#
+      if (!is.na(x[["doi"]])) publication <- paste0(publication,#
+                                                    ", ", paste0("https://doi.org/", #
+                                                                 x[["doi"]]))#
+      write(paste0("publication = \"", publication,"\""), fileConn, append = T)#
+      write(paste0("publication_short = \"", publication,"\""),fileConn, append = T)#
+      # Abstract and optional shortened version.#
+      if (abstract) {#
+        write(paste0("abstract = \"", x[["abstract"]],"\""), fileConn, append = T)#
+      } else {#
+        write("abstract = \"\"", fileConn, append = T)#
+      }#
+      write(paste0("abstract_short = \"","\""), fileConn, append = T)#
+      # other possible fields are kept empty. They can be customized later by #
+      # editing the created md#
+      write("image_preview = \"\"", fileConn, append = T)#
+      write("selected = false", fileConn, append = T)#
+      write("projects = []", fileConn, append = T)#
+      write("tags = []", fileConn, append = T)#
+      #links#
+      write("url_pdf = \"\"", fileConn, append = T)#
+      write("url_preprint = \"\"", fileConn, append = T)#
+      write("url_code = \"\"", fileConn, append = T)#
+      write("url_dataset = \"\"", fileConn, append = T)#
+      write("url_project = \"\"", fileConn, append = T)#
+      write("url_slides = \"\"", fileConn, append = T)#
+      write("url_video = \"\"", fileConn, append = T)#
+      write("url_poster = \"\"", fileConn, append = T)#
+      write("url_source = \"\"", fileConn, append = T)#
+      #other stuff#
+      write("math = true", fileConn, append = T)#
+      write("highlight = true", fileConn, append = T)#
+      # Featured image#
+      write("[header]", fileConn, append = T)#
+      write("image = \"\"", fileConn, append = T)#
+      write("caption = \"\"", fileConn, append = T)#
+      write("+++", fileConn, append = T)#
+    }#
+  }#
+  # apply the "create_md" function over the publications list to generate#
+  # the different "md" files.#
+  apply(mypubs, FUN = function(x) create_md(x), MARGIN = 1)#
+}#
+#
+my_bibfile <- "my_publications.bib"#
+out_fold   <- "myoutfolder"#
+#
+bibtex_2academic(bibfile  = my_bibfile, #
+                 outfold   = out_fold, #
+                 abstract  = FALSE)
+bibtex_2academic <- function(bibfile,#
+                             outfold,#
+                             abstract = FALSE, #
+                             overwrite = FALSE) {#
+  require(RefManageR)#
+  require(dplyr)#
+  require(stringr)#
+  require(anytime)#
+  # Import the bibtex file and convert to data.frame#
+  mypubs   <- ReadBib(bibfile, check = "warn", .Encoding = "UTF-8") %>%#
+    as.data.frame()#
+  # assign "categories" to the different types of publications#
+  mypubs   <- mypubs %>%#
+    dplyr::mutate(#
+      pubtype = dplyr::case_when(bibtype == "Article" ~ "2",#
+                                 bibtype == "Article in Press" ~ "2",#
+                                 bibtype == "InProceedings" ~ "1",#
+                                 bibtype == "Proceedings" ~ "1",#
+                                 bibtype == "Conference" ~ "1",#
+                                 bibtype == "Conference Paper" ~ "1",#
+                                 bibtype == "MastersThesis" ~ "3",#
+                                 bibtype == "PhdThesis" ~ "3",#
+                                 bibtype == "Manual" ~ "4",#
+                                 bibtype == "TechReport" ~ "4",#
+                                 bibtype == "Book" ~ "5",#
+                                 bibtype == "InCollection" ~ "6",#
+                                 bibtype == "InBook" ~ "6",#
+                                 bibtype == "Misc" ~ "0",#
+                                 TRUE ~ "0"))#
+  # create a function which populates the md template based on the info#
+  # about a publication#
+  create_md <- function(x) {#
+    # define a date and create filename by appending date and start of title#
+    if (!is.na(x[["year"]])) {#
+      x[["date"]] <- paste0(x[["year"]], "-01-01")#
+    } else {#
+      x[["date"]] <- "2999-01-01"#
+    }#
+    filename <- paste(x[["date"]], x[["title"]] %>%#
+                        str_replace_all(fixed(" "), "_") %>%#
+                        str_remove_all(fixed(":")) %>%#
+                        str_sub(1, 20) %>%#
+                        paste0(".md"), sep = "_")#
+    # start writing#
+    if (!file.exists(file.path(outfold, filename)) | overwrite) {#
+      fileConn <- file.path(outfold, filename)#
+      write("+++", fileConn)#
+      # Title and date#
+      write(paste0("title = \"", x[["title"]], "\""), fileConn, append = T)#
+      write(paste0("date = \"", anydate(x[["date"]]), "\""), fileConn, append = T)#
+      # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.#
+      auth_hugo <- str_replace_all(x["author"], " and ", "\", \"")#
+      auth_hugo <- stringi::stri_trans_general(auth_hugo, "latin-ascii")#
+      write(paste0("authors = [\"", auth_hugo,"\"]"), fileConn, append = T)#
+      # Publication type. Legend:#
+      # 0 = Uncategorized, 1 = Conference paper, 2 = Journal article#
+      # 3 = Manuscript, 4 = Report, 5 = Book,  6 = Book section#
+      write(paste0("publication_types = [\"", x[["pubtype"]],"\"]"), #
+            fileConn, append = T)#
+      # Publication details: journal, volume, issue, page numbers and doi link#
+      publication <- x[["journal"]]#
+      if (!is.na(x[["volume"]])) publication <- paste0(publication, #
+                                                       ", (", x[["volume"]], ")")#
+      if (!is.na(x[["number"]])) publication <- paste0(publication,#
+                                                       ", ", x[["number"]])#
+      if (!is.na(x[["pages"]])) publication <- paste0(publication,#
+                                                      ", _pp. ", x[["pages"]], "_")#
+      if (!is.na(x[["doi"]])) publication <- paste0(publication,#
+                                                    ", ", paste0("https://doi.org/", #
+                                                                 x[["doi"]]))#
+      write(paste0("publication = \"", publication,"\""), fileConn, append = T)#
+      write(paste0("publication_short = \"", publication,"\""),fileConn, append = T)#
+      # Abstract and optional shortened version.#
+      if (abstract) {#
+        write(paste0("abstract = \"", x[["abstract"]],"\""), fileConn, append = T)#
+      } else {#
+        write("abstract = \"\"", fileConn, append = T)#
+      }#
+      write(paste0("abstract_short = \"","\""), fileConn, append = T)#
+      # other possible fields are kept empty. They can be customized later by #
+      # editing the created md#
+      write("image_preview = \"\"", fileConn, append = T)#
+      write("selected = false", fileConn, append = T)#
+      write("projects = []", fileConn, append = T)#
+      write("tags = []", fileConn, append = T)#
+      #links#
+      write("url_pdf = \"\"", fileConn, append = T)#
+      write("url_preprint = \"\"", fileConn, append = T)#
+      write("url_code = \"\"", fileConn, append = T)#
+      write("url_dataset = \"\"", fileConn, append = T)#
+      write("url_project = \"\"", fileConn, append = T)#
+      write("url_slides = \"\"", fileConn, append = T)#
+      write("url_video = \"\"", fileConn, append = T)#
+      write("url_poster = \"\"", fileConn, append = T)#
+      write("url_source = \"\"", fileConn, append = T)#
+      #other stuff#
+      write("math = true", fileConn, append = T)#
+      write("highlight = true", fileConn, append = T)#
+      # Featured image#
+      write("[header]", fileConn, append = T)#
+      write("image = \"\"", fileConn, append = T)#
+      write("caption = \"\"", fileConn, append = T)#
+      write("+++", fileConn, append = T)#
+    }#
+  }#
+  # apply the "create_md" function over the publications list to generate#
+  # the different "md" files.#
+  apply(mypubs, FUN = function(x) create_md(x), MARGIN = 1)#
+}#
+#
+my_bibfile <- "my_publications.bib"#
+out_fold   <- "myoutfolder"#
+#
+bibtex_2academic(bibfile  = my_bibfile, #
+                 outfold   = out_fold, #
+                 abstract  = FALSE)
+bibtex_2academic <- function(bibfile,#
+                             outfold,#
+                             abstract = FALSE, #
+                             overwrite = FALSE) {#
+  require(RefManageR)#
+  require(dplyr)#
+  require(stringr)#
+  require(anytime)#
+  # Import the bibtex file and convert to data.frame#
+  mypubs   <- ReadBib(bibfile, check = "warn", .Encoding = "UTF-8") %>%#
+    as.data.frame()#
+  # assign "categories" to the different types of publications#
+  mypubs   <- mypubs %>%#
+    dplyr::mutate(#
+      pubtype = dplyr::case_when(bibtype == "Article" ~ "2",#
+                                 bibtype == "Article in Press" ~ "2",#
+                                 bibtype == "InProceedings" ~ "1",#
+                                 bibtype == "Proceedings" ~ "1",#
+                                 bibtype == "Conference" ~ "1",#
+                                 bibtype == "Conference Paper" ~ "1",#
+                                 bibtype == "MastersThesis" ~ "3",#
+                                 bibtype == "PhdThesis" ~ "3",#
+                                 bibtype == "Manual" ~ "4",#
+                                 bibtype == "TechReport" ~ "4",#
+                                 bibtype == "Book" ~ "5",#
+                                 bibtype == "InCollection" ~ "6",#
+                                 bibtype == "InBook" ~ "6",#
+                                 bibtype == "Misc" ~ "0",#
+                                 TRUE ~ "0"))#
+  # create a function which populates the md template based on the info#
+  # about a publication#
+  create_md <- function(x) {#
+    # define a date and create filename by appending date and start of title#
+    if (!is.na(x[["year"]])) {#
+      x[["date"]] <- paste0(x[["year"]], "-01-01")#
+    } else {#
+      x[["date"]] <- "2999-01-01"#
+    }#
+    filename <- paste(x[["date"]], x[["title"]] %>%#
+                        str_replace_all(fixed(" "), "_") %>%#
+                        str_remove_all(fixed(":")) %>%#
+                        str_sub(1, 20) %>%#
+                        paste0(".md"), sep = "_")#
+    # start writing#
+    if (!file.exists(file.path(outfold, filename)) | overwrite) {#
+      fileConn <- file.path(outfold, filename)#
+      write("+++", fileConn)#
+      # Title and date#
+      write(paste0("title = \"", x[["title"]], "\""), fileConn, append = T)#
+      write(paste0("date = \"", anydate(x[["date"]]), "\""), fileConn, append = T)#
+      # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.#
+      auth_hugo <- str_replace_all(x["author"], " and ", "\", \"")#
+      auth_hugo <- stringi::stri_trans_general(auth_hugo, "latin-ascii")#
+      write(paste0("authors = [\"", auth_hugo,"\"]"), fileConn, append = T)#
+      # Publication type. Legend:#
+      # 0 = Uncategorized, 1 = Conference paper, 2 = Journal article#
+      # 3 = Manuscript, 4 = Report, 5 = Book,  6 = Book section#
+      write(paste0("publication_types = [\"", x[["pubtype"]],"\"]"), #
+            fileConn, append = T)#
+      # Publication details: journal, volume, issue, page numbers and doi link#
+      publication <- x[["journal"]]#
+      if (!is.na(x[["volume"]])) publication <- paste0(publication, #
+                                                       ", (", x[["volume"]], ")")#
+      if (!is.na(x[["number"]])) publication <- paste0(publication,#
+                                                       ", ", x[["number"]])#
+      if (!is.na(x[["pages"]])) publication <- paste0(publication,#
+                                                      ", _pp. ", x[["pages"]], "_")#
+      if (!is.na(x[["doi"]])) publication <- paste0(publication,#
+                                                    ", ", paste0("https://doi.org/", #
+                                                                 x[["doi"]]))#
+      write(paste0("publication = \"", publication,"\""), fileConn, append = T)#
+      write(paste0("publication_short = \"", publication,"\""),fileConn, append = T)#
+      # Abstract and optional shortened version.#
+      if (abstract) {#
+        write(paste0("abstract = \"", x[["abstract"]],"\""), fileConn, append = T)#
+      } else {#
+        write("abstract = \"\"", fileConn, append = T)#
+      }#
+      write(paste0("abstract_short = \"","\""), fileConn, append = T)#
+      # other possible fields are kept empty. They can be customized later by #
+      # editing the created md#
+      write("image_preview = \"\"", fileConn, append = T)#
+      write("selected = false", fileConn, append = T)#
+      write("projects = []", fileConn, append = T)#
+      write("tags = []", fileConn, append = T)#
+      #links#
+      write("url_pdf = \"\"", fileConn, append = T)#
+      write("url_preprint = \"\"", fileConn, append = T)#
+      write("url_code = \"\"", fileConn, append = T)#
+      write("url_dataset = \"\"", fileConn, append = T)#
+      write("url_project = \"\"", fileConn, append = T)#
+      write("url_slides = \"\"", fileConn, append = T)#
+      write("url_video = \"\"", fileConn, append = T)#
+      write("url_poster = \"\"", fileConn, append = T)#
+      write("url_source = \"\"", fileConn, append = T)#
+      #other stuff#
+      write("math = true", fileConn, append = T)#
+      write("highlight = true", fileConn, append = T)#
+      # Featured image#
+      write("[header]", fileConn, append = T)#
+      write("image = \"\"", fileConn, append = T)#
+      write("caption = \"\"", fileConn, append = T)#
+      write("+++", fileConn, append = T)#
+    }#
+  }#
+  # apply the "create_md" function over the publications list to generate#
+  # the different "md" files.#
+  apply(mypubs, FUN = function(x) create_md(x), MARGIN = 1)#
+}#
+#
+my_bibfile <- "my_publications.bib"#
+out_fold   <- "myoutfolder"#
+#
+bibtex_2academic(bibfile  = my_bibfile, #
+                 outfold   = out_fold, #
+                 abstract  = FALSE)
+bibtex_2academic <- function(bibfile,#
+                             outfold,#
+                             abstract = FALSE, #
+                             overwrite = FALSE) {#
+  require(RefManageR)#
+  require(dplyr)#
+  require(stringr)#
+  require(anytime)#
+  # Import the bibtex file and convert to data.frame#
+  mypubs   <- ReadBib(bibfile, check = "warn", .Encoding = "UTF-8") %>%#
+    as.data.frame()#
+  # assign "categories" to the different types of publications#
+  mypubs   <- mypubs %>%#
+    dplyr::mutate(#
+      pubtype = dplyr::case_when(bibtype == "Article" ~ "2",#
+                                 bibtype == "Article in Press" ~ "2",#
+                                 bibtype == "InProceedings" ~ "1",#
+                                 bibtype == "Proceedings" ~ "1",#
+                                 bibtype == "Conference" ~ "1",#
+                                 bibtype == "Conference Paper" ~ "1",#
+                                 bibtype == "MastersThesis" ~ "3",#
+                                 bibtype == "PhdThesis" ~ "3",#
+                                 bibtype == "Manual" ~ "4",#
+                                 bibtype == "TechReport" ~ "4",#
+                                 bibtype == "Book" ~ "5",#
+                                 bibtype == "InCollection" ~ "6",#
+                                 bibtype == "InBook" ~ "6",#
+                                 bibtype == "Misc" ~ "0",#
+                                 TRUE ~ "0"))#
+  # create a function which populates the md template based on the info#
+  # about a publication#
+  create_md <- function(x) {#
+    # define a date and create filename by appending date and start of title#
+    if (!is.na(x[["year"]])) {#
+      x[["date"]] <- paste0(x[["year"]], "-01-01")#
+    } else {#
+      x[["date"]] <- "2999-01-01"#
+    }#
+    filename <- paste(x[["date"]], x[["title"]] %>%#
+                        str_replace_all(fixed(" "), "_") %>%#
+                        str_remove_all(fixed(":")) %>%#
+                        str_sub(1, 20) %>%#
+                        paste0(".md"), sep = "_")#
+    # start writing#
+    if (!file.exists(file.path(outfold, filename)) | overwrite) {#
+      fileConn <- file.path(outfold, filename)#
+      write("+++", fileConn)#
+      # Title and date#
+      write(paste0("title = \"", x[["title"]], "\""), fileConn, append = T)#
+      write(paste0("date = \"", anydate(x[["date"]]), "\""), fileConn, append = T)#
+      # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.#
+      auth_hugo <- str_replace_all(x["author"], " and ", "\", \"")#
+      auth_hugo <- stringi::stri_trans_general(auth_hugo, "latin-ascii")#
+      write(paste0("authors = [\"", auth_hugo,"\"]"), fileConn, append = T)#
+      # Publication type. Legend:#
+      # 0 = Uncategorized, 1 = Conference paper, 2 = Journal article#
+      # 3 = Manuscript, 4 = Report, 5 = Book,  6 = Book section#
+      write(paste0("publication_types = [\"", x[["pubtype"]],"\"]"), #
+            fileConn, append = T)#
+      # Publication details: journal, volume, issue, page numbers and doi link#
+      publication <- x[["journal"]]#
+      if (!is.na(x[["volume"]])) publication <- paste0(publication, #
+                                                       ", (", x[["volume"]], ")")#
+      if (!is.na(x[["number"]])) publication <- paste0(publication,#
+                                                       ", ", x[["number"]])#
+      if (!is.na(x[["pages"]])) publication <- paste0(publication,#
+                                                      ", _pp. ", x[["pages"]], "_")#
+      if (!is.na(x[["doi"]])) publication <- paste0(publication,#
+                                                    ", ", paste0("https://doi.org/", #
+                                                                 x[["doi"]]))#
+      write(paste0("publication = \"", publication,"\""), fileConn, append = T)#
+      write(paste0("publication_short = \"", publication,"\""),fileConn, append = T)#
+      # Abstract and optional shortened version.#
+      if (abstract) {#
+        write(paste0("abstract = \"", x[["abstract"]],"\""), fileConn, append = T)#
+      } else {#
+        write("abstract = \"\"", fileConn, append = T)#
+      }#
+      write(paste0("abstract_short = \"","\""), fileConn, append = T)#
+      # other possible fields are kept empty. They can be customized later by #
+      # editing the created md#
+      write("image_preview = \"\"", fileConn, append = T)#
+      write("selected = false", fileConn, append = T)#
+      write("projects = []", fileConn, append = T)#
+      write("tags = []", fileConn, append = T)#
+      #links#
+      write("url_pdf = \"\"", fileConn, append = T)#
+      write("url_preprint = \"\"", fileConn, append = T)#
+      write("url_code = \"\"", fileConn, append = T)#
+      write("url_dataset = \"\"", fileConn, append = T)#
+      write("url_project = \"\"", fileConn, append = T)#
+      write("url_slides = \"\"", fileConn, append = T)#
+      write("url_video = \"\"", fileConn, append = T)#
+      write("url_poster = \"\"", fileConn, append = T)#
+      write("url_source = \"\"", fileConn, append = T)#
+      #other stuff#
+      write("math = true", fileConn, append = T)#
+      write("highlight = true", fileConn, append = T)#
+      # Featured image#
+      write("[header]", fileConn, append = T)#
+      write("image = \"\"", fileConn, append = T)#
+      write("caption = \"\"", fileConn, append = T)#
+      write("+++", fileConn, append = T)#
+    }#
+  }#
+  # apply the "create_md" function over the publications list to generate#
+  # the different "md" files.#
+  apply(mypubs, FUN = function(x) create_md(x), MARGIN = 1)#
+}#
+#
+my_bibfile <- "my_publications.bib"#
+out_fold   <- "myoutfolder"#
+#
+bibtex_2academic(bibfile  = my_bibfile, #
+                 outfold   = out_fold, #
+                 abstract  = FALSE)
