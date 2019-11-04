@@ -1,7 +1,7 @@
 +++
 title = "Causal mechanism of extreme river discharges in the upper Danube basin network"
 date = "2019-05-01"
-authors = ["L Mhalla", "V. Chavez-Demoulin", "D.J. Dupuis"]
+authors = ["L. Mhalla", "V. Chavez-Demoulin", "D.J. Dupuis"]
 publication_types = ["2"]
 publication = "arXiv preprint arXiv:1907.03555, NA, _pp. NA_"
 publication_short = "arXiv preprint arXiv:1907.03555, NA, _pp. NA_"
