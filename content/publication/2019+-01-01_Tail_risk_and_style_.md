@@ -1,7 +1,7 @@
 +++
 title = "Tail risk and style dependence in the fund industry: a multivariate extreme value approach"
 date = "2019-08-01"
-authors = ["L Mhalla", "J. Hambuckers", "M. Lambert"]
+authors = ["L. Mhalla", "J. Hambuckers", "M. Lambert"]
 publication_types = ["2"]
 publication = "In preparation"
 publication_short = "In preparation"
