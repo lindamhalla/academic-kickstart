@@ -21,11 +21,11 @@ date_format = "January 2006"
 
 [[experience]]
 title = "Postdoctoral Fellow"
-company = "HEC Montreal"
+company = "HEC Montreal, Department of Decision Sciences"
 company_url = "https://www.hec.ca/en/"
 location = "Montreal"
 date_start = "2018-09-01"
- description = """Under the supervision of Prof. Debbie Dupuis"""
+ description = """"""
 
 
 [[experience]]
