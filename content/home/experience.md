@@ -43,7 +43,7 @@ date_start = "2018-09-01"
   """
  
  [[experience]]
- title = "PhD candidate"
+ title = "PhD candidate and teaching assistant"
  company = "University of Geneva"
  company_url = ""
  location = "Geneva"
