@@ -1,6 +1,6 @@
 +++
 title = "Bayesian space-time gap filling for inference on extreme hot-spots: an application to Red Sea surface temperatures"
-date = "NA"
+date = "2020-04-01"
 authors = ["D. Castro-Camilo", "L. Mhalla", "T. Opitz"]
 publication_types = ["2"]
 publication = "NA, NA, _pp. NA_"
@@ -11,7 +11,7 @@ image_preview = ""
 selected = false
 projects = []
 tags = []
-url_pdf = ""
+url_pdf = "https://arxiv.org/abs/2004."
 url_preprint = ""
 url_code = ""
 url_dataset = ""
