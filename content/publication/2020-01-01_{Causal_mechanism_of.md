@@ -1,6 +1,6 @@
 +++
-title = "{Causal mechanism of extreme river discharges in the upper Danube basin network}"
-date = "2020-01-01"
+title = "Causal mechanism of extreme river discharges in the upper Danube basin network"
+date = "2020-03-01"
 authors = ["L. Mhalla", "V. Chavez-Demoulin", "D.J. Dupuis"]
 publication_types = ["2"]
 publication = "Journal of the Royal Statistical Society: Series C (Applied Statistics), Accepted, NA, _pp. NA_"
@@ -11,7 +11,7 @@ image_preview = ""
 selected = false
 projects = []
 tags = []
-url_pdf = ""
+url_pdf = "https://arxiv.org/abs/1907.03555"
 url_preprint = ""
 url_code = ""
 url_dataset = ""
