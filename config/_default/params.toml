@@ -52,7 +52,7 @@ time_format = "3:04 PM"
 # Enter contact details (optional). To hide a field, clear it to "".
 email = "linda.mhalla@hec.ca"
 phone = "514 340-6430 "
-address = "Office 4.319, HEC Montreal, 3000 chemin de la Côte-Sainte-Catherine, Montreal, H3T 2A7, Canada"
+address = "Office 4.806, HEC Montreal, 3000 chemin de la Côte-Sainte-Catherine, Montreal, H3T 2A7, Canada"
 
 # Office hours: use `<br>` to insert a line break, or set to "" to remove office hours
 office_hours = ""
