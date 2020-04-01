@@ -1,6 +1,6 @@
 +++
 title = "Extremal connectedness and systemic risk of hedge funds"
-date = "NA"
+date = "2020-01-01"
 authors = ["L. Mhalla", "J. Hambuckers", "M. Lambert"]
 publication_types = ["2"]
 publication = "NA, NA, _pp. NA_"
@@ -12,7 +12,7 @@ selected = false
 projects = []
 tags = []
 url_pdf = "https://dx.doi.org/10.2139/ssrn.3519295"
-url_preprint = ""
+url_preprint = "https://dx.doi.org/10.2139/ssrn.3519295"
 url_code = ""
 url_dataset = ""
 url_project = ""
