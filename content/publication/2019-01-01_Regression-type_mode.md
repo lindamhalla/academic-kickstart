@@ -1,7 +1,7 @@
 +++
 title = "Regression-type models for extremal dependence"
 date = "2019-01-01"
-authors = ["L. Mhalla", "M. {de Carvalho}", "V. Chavez-Demoulin"]
+authors = ["L. Mhalla", "M. de Carvalho", "V. Chavez-Demoulin"]
 publication_types = ["2"]
 publication = "Scandinavian Journal of Statistics, (46), 4, _pp. 1141--1167_, https://doi.org/10.1111/sjos.12388"
 publication_short = "Scandinavian Journal of Statistics, (46), 4, _pp. 1141--1167_, https://doi.org/10.1111/sjos.12388"
