@@ -2,7 +2,7 @@
 title = "Tracking changes in spatiotemporal extreme precipitation patterns during hurricane season"
 date = "NA"
 authors = ["L. Mhalla", "D. J. Dupuis"]
-publication_types = ["3"]
+publication_types = ["4"]
 publication = "In preparation"
 publication_short = "In preparation"
 abstract = ""
