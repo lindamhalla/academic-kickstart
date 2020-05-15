@@ -20,7 +20,7 @@ count = 10
 #   2 = APA
 #   3 = MLA
 #   4 = Stream
-list_format = 4
+list_format = 1
 
 # Filter by publication type.
 # -1: Any
@@ -31,7 +31,7 @@ list_format = 4
 #  4: Technical report
 #  5: Book
 #  6: Book chapter
-publication_type = "-1"
+publication_type = "2"
 
 # Exclude publications that are shown in the Featured Publications widget?
 exclude_featured = false
