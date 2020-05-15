@@ -5,7 +5,7 @@ publishDate = "2019-06-21"
 all_day = true
 authors = ["L. Mhalla", "J. Hambuckers", "M. Lambert"]
 location = "University of Lausanne, Switzerland"
-event = "Operations Research Seminar"
+event = "Operations Research Seminar, HEC Lausanne"
 event_url = "https://agenda.unil.ch/display/1554390100924"
 featured = true
 +++
