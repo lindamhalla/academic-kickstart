@@ -8,7 +8,7 @@ date = 2019-01-29T00:00:00
 #   2 = APA
 #   3 = MLA
 #   4 = Stream
-list_format = 3
+list_format = 1
 
 +++
 
