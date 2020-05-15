@@ -128,6 +128,14 @@ sharing = true
   # Date format (refer to https://sourcethemes.com/academic/docs/customization/#date-format )
   #   Examples: "Mon, Jan 2, 2006" or "2006-01-02"
   date_format = "January 2006"
+  
+    # Publication list format.
+  #   0 = Simple
+  #   1 = Detailed
+  #   2 = APA
+  #   3 = MLA
+  #   4 = Stream
+  publication_format = 2
 
 # Configuration of project pages.
 [projects]
