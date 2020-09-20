@@ -6,11 +6,11 @@ name = "Linda Mhalla"
 superuser = true
 
 # Role/position
-role = "Postdoctoral fellow"
+role = "Scientific collaborator"
 
 # Organizations/Affiliations
 #   Separate multiple entries with a comma, using the form: `[ {name="Org1", url=""}, {name="Org2", url=""} ]`.
-organizations = [ { name = "HEC Montreal", url = "" } ]
+organizations = [ { name = "HEC Lausanne", url = "https://www.unil.ch/do/en/home.html" } ]
 
 # Short bio (displayed in user profile at end of posts)
 bio = "My research interests include extreme value theory and its application to environmental data, smooth modelling, and causal inference."
@@ -22,6 +22,7 @@ email = "linda.mhalla@hec.ca"
 interests = [
   "Extreme value theory",
   "Multivariate/spatial modelling of extremes",
+  "Environmental data modelling",
   "Causal inference",
   "GAM methodology"
 ]
