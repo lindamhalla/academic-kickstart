@@ -20,11 +20,20 @@ date_format = "January 2006"
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 
 [[experience]]
+title = "Scientific collaborator"
+company = "HEC Lausanne, Department of Operations"
+company_url = "https://www.unil.ch/do/en/home.html"
+location = "Lausanne"
+date_start = "2020-09-01"
+ description = """"""
+ 
+[[experience]]
 title = "Postdoctoral Fellow"
 company = "HEC Montreal, Department of Decision Sciences"
 company_url = "https://www.hec.ca/en/"
 location = "Montreal"
 date_start = "2018-09-01"
+date_end = "2020-08-31"
  description = """"""
 
 
