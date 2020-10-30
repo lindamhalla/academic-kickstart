@@ -16,7 +16,7 @@ organizations = [ { name = "HEC Lausanne", url = "https://www.unil.ch/do/en/home
 bio = "My research interests include extreme value theory and its application to environmental data, smooth modelling, and causal inference."
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
-email = "linda.mhalla@hec.ca"
+email = "linda.mhalla@unil.ch"
 
 # List (academic) interests or hobbies
 interests = [
@@ -64,7 +64,7 @@ interests = [
  [[social]]
  icon = "envelope"
  icon_pack = "fas"
- link = "#contact"  # For a direct email link, use "linda.mhalla@hec.ca".
+ link = "#contact"  # For a direct email link, use "linda.mhalla@unil.ch".
 
 # [[social]]
 # icon = "twitter"
