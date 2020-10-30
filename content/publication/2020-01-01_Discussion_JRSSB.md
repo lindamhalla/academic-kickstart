@@ -1,5 +1,5 @@
 +++
-title = "Discussion of Graphical models for extremes"
+title = "Discussion of 'Graphical models for extremes' "
 date = "2020-07-01"
 authors = ["L. Mhalla"]
 publication_types = ["2"]
