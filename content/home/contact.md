@@ -20,4 +20,4 @@ autolink = true
 email_form = 1
 +++
 
-<iframe src="https://www.google.com/maps/place/UNIL+-+Anthropole/@46.5235556,6.5846087,15z/data=!4m12!1m6!3m5!1s0x0:0xdc0453c0cad60cc8!2sUNIL+-+Anthropole!8m2!3d46.5235556!4d6.5846087!3m4!1s0x0:0xdc0453c0cad60cc8!8m2!3d46.5235556!4d6.5846087" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+<iframe src="https://goo.gl/maps/NdYyAmvQbmcm467c7" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
