@@ -51,9 +51,9 @@ time_format = "3:04 PM"
 ############################
 
 # Enter contact details (optional). To hide a field, clear it to "".
-email = "linda.mhalla@hec.ca"
-phone = "514 340-6430 "
-address = "Office 4.806, HEC Montreal, 3000 chemin de la Côte-Sainte-Catherine, Montreal, H3T 2A7, Canada"
+email = "linda.mhalla@unil.ch"
+phone = "+41 21 692 34 66 "
+address = "Office 3.087, HEC Lausanne, Quartier UNIL-Chamberonne, Bâtiment Anthropole, 1015 Lausanne, Switzerland"
 
 # Office hours: use `<br>` to insert a line break, or set to "" to remove office hours
 office_hours = ""
@@ -88,8 +88,8 @@ contact_links = [
 #   3: OpenStreetMap (Mapbox)
 map = 0
 map_api_key = ""
-latitude = "37.4275"
-longitude = "-122.1697"
+latitude = "46.52398375681231"
+longitude = "6.586046364043802"
 zoom = 15
 
 ############################
