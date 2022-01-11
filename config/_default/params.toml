@@ -52,7 +52,7 @@ time_format = "3:04 PM"
 
 # Enter contact details (optional). To hide a field, clear it to "".
 email = "linda.mhalla@gmail.com"
-phone = "+41 21 692 34 66 "
+phone = "+41 21 692 34 66"
 address = "Office 3.087, HEC Lausanne, Quartier UNIL-Chamberonne, Bâtiment Anthropole, 1015 Lausanne, Switzerland"
 
 # Office hours: use `<br>` to insert a line break, or set to "" to remove office hours
