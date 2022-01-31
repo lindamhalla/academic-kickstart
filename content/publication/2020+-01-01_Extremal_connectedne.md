@@ -1,9 +1,9 @@
 +++
 title = "Extremal connectedness and systemic risk of hedge funds"
-date = "2020-01-01"
+date = "2022-01-01"
 authors = ["L. Mhalla", "J. Hambuckers", "M. Lambert"]
 publication_types = ["2"]
-publication = "Available at https://dx.doi.org/10.2139/ssrn.3519295"
+publication = "Journal of Applied Econometrics, forthcoming"
 publication_short = "Available at https://dx.doi.org/10.2139/ssrn.3519295"
 abstract = ""
 abstract_short = ""
