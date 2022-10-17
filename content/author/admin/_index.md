@@ -6,17 +6,17 @@ name = "Linda Mhalla"
 superuser = true
 
 # Role/position
-role = "Scientific collaborator"
+role = "Scientist"
 
 # Organizations/Affiliations
 #   Separate multiple entries with a comma, using the form: `[ {name="Org1", url=""}, {name="Org2", url=""} ]`.
-organizations = [ { name = "HEC Lausanne", url = "https://www.unil.ch/do/en/home.html" } ]
+organizations = [ { name = "Institute of Mathematics, EPFL", url = "https://www.epfl.ch/schools/sb/research/math/" } ]
 
 # Short bio (displayed in user profile at end of posts)
-bio = "My research interests include extreme value theory and its application to environmental data, smooth modelling, and causal inference."
+bio = "My research interests include extreme value theory and its application to environmental and financial data, quantitative risk modelling, smooth modelling, and causal inference."
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
-email = "linda.mhalla@unil.ch"
+email = "linda.mhalla@epfl.ch"
 
 # List (academic) interests or hobbies
 interests = [
@@ -64,7 +64,7 @@ interests = [
  [[social]]
  icon = "envelope"
  icon_pack = "fas"
- link = "#contact"  # For a direct email link, use "linda.mhalla@unil.ch".
+ link = "#contact"  # For a direct email link, use "linda.mhalla@epfl.ch".
 
 # [[social]]
 # icon = "twitter"
@@ -90,4 +90,4 @@ link = "files/Mhalla_cv.pdf"
 
 +++
 
-My research interests include extreme value theory and its application to environmental data, smooth modelling, and causal inference.
+My research interests include extreme value theory and its application to environmental and financial data, quantitative risk modelling, smooth modelling, and causal inference.
