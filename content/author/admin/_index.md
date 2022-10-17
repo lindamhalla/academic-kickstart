@@ -25,7 +25,6 @@ interests = [
   "Extreme value theory",
   "Environmental data modelling",
   "GAM methodology",
-  "Multivariate/spatial modelling of extremes",
   "Quantitative risk modelling" 
 ]
 
