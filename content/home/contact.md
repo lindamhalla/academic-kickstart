@@ -20,4 +20,4 @@ autolink = true
 email_form = 1
 +++
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10980.87851832888!2d6.5846087!3d46.5235556!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdc0453c0cad60cc8!2sUNIL%20-%20Anthropole!5e0!3m2!1sen!2sch!4v1629358459905!5m2!1sen!2sch" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10981.788030978598!2d6.5667576!3d46.5190557!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbbcc34ab7f93b272!2sSwiss%20Federal%20Institute%20of%20Technology%20Lausanne!5e0!3m2!1sen!2sch!4v1665991636477!5m2!1sen!2sch" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
