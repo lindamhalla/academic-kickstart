@@ -51,7 +51,7 @@ time_format = "3:04 PM"
 ############################
 
 # Enter contact details (optional). To hide a field, clear it to "".
-email = "linda.mhalla@gmail.com"
+email = "linda.mhalla@epfl.ch"
 phone = "+41 21 693 74 43"
 address = "Office CM 1 618, EPFL, 1015 Lausanne, Switzerland"
 
