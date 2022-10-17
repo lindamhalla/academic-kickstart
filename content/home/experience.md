@@ -33,6 +33,7 @@ company = "HEC Lausanne, Department of Operations"
 company_url = "https://www.unil.ch/do/en/home.html"
 location = "Lausanne"
 date_start = "2020-09-01"
+date_end = "2022-06-15"
  description = """"""
  
 [[experience]]
