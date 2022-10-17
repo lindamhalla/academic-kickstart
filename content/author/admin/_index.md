@@ -10,7 +10,7 @@ role = "Scientist"
 
 # Organizations/Affiliations
 #   Separate multiple entries with a comma, using the form: `[ {name="Org1", url=""}, {name="Org2", url=""} ]`.
-organizations = [ { name = "Institute of Mathematics, EPFL", url = "https://www.epfl.ch/schools/sb/research/math/" } ]
+organizations = [ { name = "EPFL", url = "https://www.epfl.ch/schools/sb/research/math/" } ]
 
 # Short bio (displayed in user profile at end of posts)
 bio = "My research interests include extreme value theory and its application to environmental and financial data, quantitative risk modelling, smooth modelling, and causal inference."
@@ -20,11 +20,13 @@ email = "linda.mhalla@epfl.ch"
 
 # List (academic) interests or hobbies
 interests = [
-  "Extreme value theory",
-  "Multivariate/spatial modelling of extremes",
-  "Environmental data modelling",
   "Causal inference",
-  "GAM methodology"
+  "Climate risk assessment",
+  "Extreme value theory",
+  "Environmental data modelling",
+  "GAM methodology",
+  "Multivariate/spatial modelling of extremes",
+  "Quantitative risk modelling" 
 ]
 
 # List qualifications (such as academic degrees)
