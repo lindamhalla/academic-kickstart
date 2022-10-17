@@ -22,8 +22,8 @@ email = "linda.mhalla@epfl.ch"
 interests = [
   "Causal inference",
   "Climate risk assessment",
-  "Extreme value theory",
   "Environmental data modelling",
+  "Extreme value theory",
   "GAM methodology",
   "Quantitative risk modelling" 
 ]
