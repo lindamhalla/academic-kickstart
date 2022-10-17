@@ -52,8 +52,8 @@ time_format = "3:04 PM"
 
 # Enter contact details (optional). To hide a field, clear it to "".
 email = "linda.mhalla@gmail.com"
-phone = "+41 21 692 34 66"
-address = "Office 3.087, HEC Lausanne, Quartier UNIL-Chamberonne, Bâtiment Anthropole, 1015 Lausanne, Switzerland"
+phone = "+41 21 693 74 43"
+address = "Office CM 1 618, EPFL, 1015 Lausanne, Switzerland"
 
 # Office hours: use `<br>` to insert a line break, or set to "" to remove office hours
 office_hours = ""
@@ -88,8 +88,8 @@ contact_links = [
 #   3: OpenStreetMap (Mapbox)
 map = 0
 map_api_key = ""
-latitude = "46.523925"
-longitude = "6.584759"
+latitude = "46.519853"
+longitude = "6.568753"
 zoom = 15
 
 ############################
