@@ -1,10 +1,10 @@
 +++
-title = "Tracking changes in spatiotemporal extreme precipitation patterns during hurricane season"
-date = "2020"
-authors = ["L. Mhalla", "D. J. Dupuis"]
+title = "Causal discovery in multivariate extremes: A study of Swiss hydrological catchments"
+date = "2025-01-01"
+authors = ["L. Mhalla", "V. Chavez-Demoulin", "P. Naveau"]
 publication_types = ["2"]
-publication = "In preparation"
-publication_short = "In preparation"
+publication = "Environmetrics, 36, e70034"
+publication_short = "Environmetrics, 36, e70034"
 abstract = ""
 abstract_short = ""
 image_preview = ""

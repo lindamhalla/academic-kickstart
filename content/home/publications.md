@@ -31,9 +31,8 @@ list_format = 1
 #  4: Technical report
 #  5: Book
 #  6: Book chapter
-publication_type = "2"
+publication_type = "-1"
 
 # Exclude publications that are shown in the Featured Publications widget?
 exclude_featured = false
 +++
-

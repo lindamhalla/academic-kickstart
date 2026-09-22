@@ -1,10 +1,10 @@
 +++
 title = "Extremal connectedness of hedge funds"
-date = "2022-01-01"
+date = "2021-01-01"
 authors = ["L. Mhalla", "J. Hambuckers", "M. Lambert"]
 publication_types = ["2"]
-publication = "Journal of Applied Econometrics"
-publication_short = "Journal of Applied Econometrics, (5), 37, pp. 988– 1009, https://doi.org/10.1002/jae.2900"
+publication = "Journal of Applied Econometrics, 37, pp. 988--1009"
+publication_short = "Journal of Applied Econometrics, 37, pp. 988--1009"
 abstract = ""
 abstract_short = ""
 image_preview = ""
