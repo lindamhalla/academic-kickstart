@@ -13,7 +13,7 @@ role = "Scientist"
 organizations = [ { name = "EPFL", url = "https://www.epfl.ch/schools/sb/research/math/" } ]
 
 # Short bio (displayed in user profile at end of posts)
-bio = "My research interests include extreme value theory and its application to environmental and financial data, quantitative risk modelling, smooth modelling, and causal inference."
+bio = "My research interests include extreme value theory and its application to environmental and financial data, quantitative risk modelling, smooth modelling, and causal inference and discovery."
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email = "linda.mhalla@epfl.ch"
