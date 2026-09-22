@@ -1,0 +1,695 @@
+diff --git a/content/home/publications.md b/content/home/publications.md
+index 015a96e..49f45e9 100644
+--- a/content/home/publications.md
++++ b/content/home/publications.md
+@@ -31,9 +31,8 @@ list_format = 1
+ #  4: Technical report
+ #  5: Book
+ #  6: Book chapter
+-publication_type = "2"
++publication_type = "-1"
+ 
+ # Exclude publications that are shown in the Featured Publications widget?
+ exclude_featured = false
+ +++
+-
+diff --git a/content/publication/2020+-01-01_Bayesian_space-time_.md b/content/publication/2020+-01-01_Bayesian_space-time_.md
+index f7afbf5..feb9ba6 100644
+--- a/content/publication/2020+-01-01_Bayesian_space-time_.md
++++ b/content/publication/2020+-01-01_Bayesian_space-time_.md
+@@ -1,10 +1,10 @@
+ +++
+ title = "Bayesian space-time gap filling for inference on extreme hot-spots: an application to Red Sea surface temperatures"
+-date = "2020-04-01"
++date = "2021-01-01"
+ authors = ["D. Castro-Camilo", "L. Mhalla", "T. Opitz"]
+ publication_types = ["2"]
+-publication = "Extremes, https://link.springer.com/article/10.1007/s10687-020-00394-z"
+-publication_short = "Extremes, https://link.springer.com/article/10.1007/s10687-020-00394-z"
++publication = "Extremes, 24, pp. 105--128"
++publication_short = "Extremes, 24, pp. 105--128"
+ abstract = ""
+ abstract_short = ""
+ image_preview = ""
+diff --git a/content/publication/2020+-01-01_Extremal_connectedne.md b/content/publication/2020+-01-01_Extremal_connectedne.md
+index 6800a50..f6204cf 100644
+--- a/content/publication/2020+-01-01_Extremal_connectedne.md
++++ b/content/publication/2020+-01-01_Extremal_connectedne.md
+@@ -1,10 +1,10 @@
+ +++
+ title = "Extremal connectedness of hedge funds"
+-date = "2022-01-01"
++date = "2021-01-01"
+ authors = ["L. Mhalla", "J. Hambuckers", "M. Lambert"]
+ publication_types = ["2"]
+-publication = "Journal of Applied Econometrics"
+-publication_short = "Journal of Applied Econometrics, (5), 37, pp. 988– 1009, https://doi.org/10.1002/jae.2900"
++publication = "Journal of Applied Econometrics, 37, pp. 988--1009"
++publication_short = "Journal of Applied Econometrics, 37, pp. 988--1009"
+ abstract = ""
+ abstract_short = ""
+ image_preview = ""
+diff --git a/content/publication/2021-01-01_Climate-related_disasters.md b/content/publication/2021-01-01_Climate-related_disasters.md
+new file mode 100644
+index 0000000..9373020
+--- /dev/null
++++ b/content/publication/2021-01-01_Climate-related_disasters.md
+@@ -0,0 +1,28 @@
+++++
++title = "Climate-related disasters and death toll"
++date = "2021-01-01"
++authors = ["V. Chavez-Demoulin", "E. Jondeau", "L. Mhalla"]
++publication_types = ["3"]
++publication = "Working paper"
++publication_short = "Working paper"
++abstract = ""
++abstract_short = ""
++image_preview = ""
++selected = false
++projects = []
++tags = []
++url_pdf = "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3918201"
++url_preprint = "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3918201"
++url_code = ""
++url_dataset = ""
++url_project = ""
++url_slides = ""
++url_video = ""
++url_poster = ""
++url_source = ""
++math = true
++highlight = true
++[header]
++image = ""
++caption = ""
+++++
+diff --git a/content/publication/2024-01-01_Causal_inference_for_extreme_values.md b/content/publication/2024-01-01_Causal_inference_for_extreme_values.md
+new file mode 100644
+index 0000000..6da97ed
+--- /dev/null
++++ b/content/publication/2024-01-01_Causal_inference_for_extreme_values.md
+@@ -0,0 +1,28 @@
+++++
++title = "Causal inference for extreme values"
++date = "2024-01-01"
++authors = ["V. Chavez-Demoulin", "L. Mhalla"]
++publication_types = ["6"]
++publication = "In M. de Carvalho, R. Huser, P. Naveau, and B. J. Reich (Eds.), Handbook on Statistics of Extremes. Chapman & Hall / CRC"
++publication_short = "Handbook on Statistics of Extremes. Chapman & Hall / CRC"
++abstract = ""
++abstract_short = ""
++image_preview = ""
++selected = false
++projects = []
++tags = []
++url_pdf = ""
++url_preprint = ""
++url_code = ""
++url_dataset = ""
++url_project = ""
++url_slides = ""
++url_video = ""
++url_poster = ""
++url_source = ""
++math = true
++highlight = true
++[header]
++image = ""
++caption = ""
+++++
+diff --git a/content/publication/2020+-01-01_Tracking_changes_in_.md b/content/publication/2025-01-01_Causal_discovery_multivariate_extremes.md
+similarity index 55%
+rename from content/publication/2020+-01-01_Tracking_changes_in_.md
+rename to content/publication/2025-01-01_Causal_discovery_multivariate_extremes.md
+index f24740f..2398a79 100644
+--- a/content/publication/2020+-01-01_Tracking_changes_in_.md
++++ b/content/publication/2025-01-01_Causal_discovery_multivariate_extremes.md
+@@ -1,10 +1,10 @@
+ +++
+-title = "Tracking changes in spatiotemporal extreme precipitation patterns during hurricane season"
+-date = "2020"
+-authors = ["L. Mhalla", "D. J. Dupuis"]
++title = "Causal discovery in multivariate extremes: A study of Swiss hydrological catchments"
++date = "2025-01-01"
++authors = ["L. Mhalla", "V. Chavez-Demoulin", "P. Naveau"]
+ publication_types = ["2"]
+-publication = "In preparation"
+-publication_short = "In preparation"
++publication = "Environmetrics, 36, e70034"
++publication_short = "Environmetrics, 36, e70034"
+ abstract = ""
+ abstract_short = ""
+ image_preview = ""
+diff --git a/content/publication/2025-01-01_Review_EVT_environmental_risk.md b/content/publication/2025-01-01_Review_EVT_environmental_risk.md
+new file mode 100644
+index 0000000..91d0e84
+--- /dev/null
++++ b/content/publication/2025-01-01_Review_EVT_environmental_risk.md
+@@ -0,0 +1,28 @@
+++++
++title = "A review of applications of extreme value theory to environmental risk assessment"
++date = "2025-01-01"
++authors = ["L. Gimeno-Sotelo", "J. Richards", "A. Hazra", "L. Mhalla", "P. de Zea Bermudez"]
++publication_types = ["6"]
++publication = "In A. Bekker, J. Ferreira, and P. Nagar (Eds.), Environmental Statistics: Innovative Methods and Applications. Taylor & Francis"
++publication_short = "Environmental Statistics: Innovative Methods and Applications. Taylor & Francis"
++abstract = ""
++abstract_short = ""
++image_preview = ""
++selected = false
++projects = []
++tags = []
++url_pdf = ""
++url_preprint = ""
++url_code = ""
++url_dataset = ""
++url_project = ""
++url_slides = ""
++url_video = ""
++url_poster = ""
++url_source = ""
++math = true
++highlight = true
++[header]
++image = ""
++caption = ""
+++++
+diff --git a/content/talk/2016-06_YRC.md b/content/talk/2016-06_YRC.md
+new file mode 100644
+index 0000000..eff3c6d
+--- /dev/null
++++ b/content/talk/2016-06_YRC.md
+@@ -0,0 +1,11 @@
+++++
++title = "Young Researchers Conference"
++date = "2016-06-01"
++date_format = "January 2006"
++all_day = true
++authors = ["L. Mhalla"]
++location = "Lausanne, Switzerland"
++event = "Internal seminar"
++event_url = ""
++featured = false
+++++
+diff --git a/content/talk/2016-12_ERCIM.md b/content/talk/2016-12_ERCIM.md
+new file mode 100644
+index 0000000..1dc27a3
+--- /dev/null
++++ b/content/talk/2016-12_ERCIM.md
+@@ -0,0 +1,11 @@
+++++
++title = "9th International Conference on Computational and Methodological Statistics (ERCIM)"
++date = "2016-12-01"
++date_format = "January 2006"
++all_day = true
++authors = ["L. Mhalla"]
++location = "Seville, Spain"
++event = "Invited talk"
++event_url = ""
++featured = false
+++++
+diff --git a/content/talk/2017-02_Risk_quantification.md b/content/talk/2017-02_Risk_quantification.md
+new file mode 100644
+index 0000000..7fb4d62
+--- /dev/null
++++ b/content/talk/2017-02_Risk_quantification.md
+@@ -0,0 +1,11 @@
+++++
++title = "Workshop on Risk Quantification and Extreme Values in Applications"
++date = "2017-02-01"
++date_format = "January 2006"
++all_day = true
++authors = ["L. Mhalla"]
++location = "Lausanne, Switzerland"
++event = "Contributed talk"
++event_url = ""
++featured = false
+++++
+diff --git a/content/talk/2017-06_YRC.md b/content/talk/2017-06_YRC.md
+new file mode 100644
+index 0000000..94466ba
+--- /dev/null
++++ b/content/talk/2017-06_YRC.md
+@@ -0,0 +1,11 @@
+++++
++title = "Young Researchers Conference"
++date = "2017-06-01"
++date_format = "January 2006"
++all_day = true
++authors = ["L. Mhalla"]
++location = "Lausanne, Switzerland"
++event = "Internal seminar"
++event_url = ""
++featured = false
+++++
+diff --git a/content/talk/2018-12_ERCIM.md b/content/talk/2018-12_ERCIM.md
+new file mode 100644
+index 0000000..08d47e1
+--- /dev/null
++++ b/content/talk/2018-12_ERCIM.md
+@@ -0,0 +1,11 @@
+++++
++title = "11th International Conference on Computational and Methodological Statistics (ERCIM)"
++date = "2018-12-01"
++date_format = "January 2006"
++all_day = true
++authors = ["L. Mhalla"]
++location = "Pisa, Italy"
++event = "Invited talk"
++event_url = ""
++featured = false
+++++
+diff --git a/content/talk/2019-02_Laval.md b/content/talk/2019-02_Laval.md
+new file mode 100644
+index 0000000..f987f9c
+--- /dev/null
++++ b/content/talk/2019-02_Laval.md
+@@ -0,0 +1,11 @@
+++++
++title = "Department of Mathematics and Statistics, Université Laval"
++date = "2019-02-01"
++date_format = "January 2006"
++all_day = true
++authors = ["L. Mhalla"]
++location = "Québec, Canada"
++event = "Invited talk"
++event_url = ""
++featured = false
+++++
+diff --git a/content/talk/2019-04_Sherbrooke.md b/content/talk/2019-04_Sherbrooke.md
+new file mode 100644
+index 0000000..8f0bbf7
+--- /dev/null
++++ b/content/talk/2019-04_Sherbrooke.md
+@@ -0,0 +1,11 @@
+++++
++title = "Département de mathématiques, Université de Sherbrooke"
++date = "2019-04-01"
++date_format = "January 2006"
++all_day = true
++authors = ["L. Mhalla"]
++location = "Québec, Canada"
++event = "Invited talk"
++event_url = ""
++featured = false
+++++
+diff --git a/content/talk/2019-10_Statlab.md b/content/talk/2019-10_Statlab.md
+new file mode 100644
+index 0000000..e087d75
+--- /dev/null
++++ b/content/talk/2019-10_Statlab.md
+@@ -0,0 +1,11 @@
+++++
++title = "Fall Meeting of Statlab, University of Montréal"
++date = "2019-10-01"
++date_format = "January 2006"
++all_day = true
++authors = ["L. Mhalla"]
++location = "Montréal, Canada"
++event = "Invited talk"
++event_url = ""
++featured = false
+++++
+diff --git a/content/talk/2019-12_ERCIM.md b/content/talk/2019-12_ERCIM.md
+new file mode 100644
+index 0000000..fa31257
+--- /dev/null
++++ b/content/talk/2019-12_ERCIM.md
+@@ -0,0 +1,11 @@
+++++
++title = "12th International Conference on Computational and Methodological Statistics (ERCIM)"
++date = "2019-12-01"
++date_format = "January 2006"
++all_day = true
++authors = ["L. Mhalla"]
++location = "London, United Kingdom"
++event = "Invited talk"
++event_url = ""
++featured = false
+++++
+diff --git a/content/talk/2020-10_GERAD.md b/content/talk/2020-10_GERAD.md
+new file mode 100644
+index 0000000..4e18d33
+--- /dev/null
++++ b/content/talk/2020-10_GERAD.md
+@@ -0,0 +1,11 @@
+++++
++title = "Meet a GERAD researcher! seminar series"
++date = "2020-10-01"
++date_format = "January 2006"
++all_day = true
++authors = ["L. Mhalla"]
++location = "Online"
++event = "Invited virtual talk"
++event_url = ""
++featured = false
+++++
+diff --git a/content/talk/2021-06_EVA.md b/content/talk/2021-06_EVA.md
+new file mode 100644
+index 0000000..300dc07
+--- /dev/null
++++ b/content/talk/2021-06_EVA.md
+@@ -0,0 +1,11 @@
+++++
++title = "11th International Conference on Extreme Value Analysis"
++date = "2021-06-01"
++date_format = "January 2006"
++all_day = true
++authors = ["L. Mhalla"]
++location = "Online"
++event = "Invited virtual talk"
++event_url = ""
++featured = false
+++++
+diff --git a/content/talk/2022-02_CLIMACT.md b/content/talk/2022-02_CLIMACT.md
+new file mode 100644
+index 0000000..6f30846
+--- /dev/null
++++ b/content/talk/2022-02_CLIMACT.md
+@@ -0,0 +1,11 @@
+++++
++title = "CLIMACT seminar series"
++date = "2022-02-01"
++date_format = "January 2006"
++all_day = true
++authors = ["L. Mhalla"]
++location = "Online"
++event = "Invited virtual talk"
++event_url = ""
++featured = false
+++++
+diff --git a/content/talk/2022-09_CIRM.md b/content/talk/2022-09_CIRM.md
+new file mode 100644
+index 0000000..92926d1
+--- /dev/null
++++ b/content/talk/2022-09_CIRM.md
+@@ -0,0 +1,11 @@
+++++
++title = "Centre International de Rencontres Mathématiques"
++date = "2022-09-01"
++date_format = "January 2006"
++all_day = true
++authors = ["L. Mhalla"]
++location = "Marseille, France"
++event = "Invited talk"
++event_url = ""
++featured = false
+++++
+diff --git a/content/talk/2024-02_Causality_in_Extremes.md b/content/talk/2024-02_Causality_in_Extremes.md
+new file mode 100644
+index 0000000..0e642f8
+--- /dev/null
++++ b/content/talk/2024-02_Causality_in_Extremes.md
+@@ -0,0 +1,11 @@
+++++
++title = "Workshop Causality in Extremes"
++date = "2024-02-01"
++date_format = "January 2006"
++all_day = true
++authors = ["L. Mhalla"]
++location = "Geneva, Switzerland"
++event = "Invited talk"
++event_url = ""
++featured = false
+++++
+diff --git a/content/talk/2025-02_Trento.md b/content/talk/2025-02_Trento.md
+new file mode 100644
+index 0000000..52a9778
+--- /dev/null
++++ b/content/talk/2025-02_Trento.md
+@@ -0,0 +1,11 @@
+++++
++title = "Workshop Extreme events in economics, finance, and society"
++date = "2025-02-01"
++date_format = "January 2006"
++all_day = true
++authors = ["L. Mhalla"]
++location = "Trento, Italy"
++event = "Invited talk"
++event_url = ""
++featured = false
+++++
+diff --git a/content/talk/2025-06_EVA.md b/content/talk/2025-06_EVA.md
+new file mode 100644
+index 0000000..a472258
+--- /dev/null
++++ b/content/talk/2025-06_EVA.md
+@@ -0,0 +1,11 @@
+++++
++title = "14th International Conference on Extreme Value Analysis"
++date = "2025-06-01"
++date_format = "January 2006"
++all_day = true
++authors = ["L. Mhalla"]
++location = "North Carolina, USA"
++event = "Invited talk"
++event_url = ""
++featured = false
+++++
+diff --git a/content/talk/2025-10_SGT_methods.md b/content/talk/2025-10_SGT_methods.md
+new file mode 100644
+index 0000000..1c2d3af
+--- /dev/null
++++ b/content/talk/2025-10_SGT_methods.md
+@@ -0,0 +1,11 @@
+++++
++title = "Workshop SGT methods"
++date = "2025-10-01"
++date_format = "January 2006"
++all_day = true
++authors = ["L. Mhalla"]
++location = "Online"
++event = "Invited virtual talk, Institut des actuaires, France"
++event_url = ""
++featured = false
+++++
+diff --git a/content/talk/2025-11_Karlsruhe_climate_extremes.md b/content/talk/2025-11_Karlsruhe_climate_extremes.md
+new file mode 100644
+index 0000000..999fee4
+--- /dev/null
++++ b/content/talk/2025-11_Karlsruhe_climate_extremes.md
+@@ -0,0 +1,11 @@
+++++
++title = "Workshop Statistics and Data Science for Climate and Weather Extremes"
++date = "2025-11-01"
++date_format = "January 2006"
++all_day = true
++authors = ["L. Mhalla"]
++location = "Karlsruhe Institute of Technology, Karlsruhe, Germany"
++event = "Invited talk"
++event_url = ""
++featured = false
+++++
+diff --git a/content/talk/2026-03_Glasgow_Edinburgh.md b/content/talk/2026-03_Glasgow_Edinburgh.md
+new file mode 100644
+index 0000000..6857067
+--- /dev/null
++++ b/content/talk/2026-03_Glasgow_Edinburgh.md
+@@ -0,0 +1,11 @@
+++++
++title = "The Glasgow-Edinburgh Extremes Network: Thematic session on Causality for extremes"
++date = "2026-03-01"
++date_format = "January 2006"
++all_day = true
++authors = ["L. Mhalla"]
++location = "Online"
++event = "Invited virtual talk"
++event_url = ""
++featured = false
+++++
+diff --git a/content/talk/2026-05_CISE.md b/content/talk/2026-05_CISE.md
+new file mode 100644
+index 0000000..9b8a5d4
+--- /dev/null
++++ b/content/talk/2026-05_CISE.md
+@@ -0,0 +1,11 @@
+++++
++title = "Colloque International Statistique et Econométrie"
++date = "2026-05-01"
++date_format = "January 2006"
++all_day = true
++authors = ["L. Mhalla"]
++location = "Mahdia, Tunisia"
++event = "Invited talk"
++event_url = ""
++featured = false
+++++
+diff --git a/content/talk/2026-08_EMS.md b/content/talk/2026-08_EMS.md
+new file mode 100644
+index 0000000..140b80b
+--- /dev/null
++++ b/content/talk/2026-08_EMS.md
+@@ -0,0 +1,11 @@
+++++
++title = "European Meeting of Statisticians"
++date = "2026-08-01"
++date_format = "January 2006"
++all_day = true
++authors = ["L. Mhalla"]
++location = "Lugano, Switzerland"
++event = "Contributed talk"
++event_url = ""
++featured = false
+++++
+diff --git a/layouts/partials/talk_li_stream.html b/layouts/partials/talk_li_stream.html
+new file mode 100644
+index 0000000..2329666
+--- /dev/null
++++ b/layouts/partials/talk_li_stream.html
+@@ -0,0 +1,61 @@
++<div class="media stream-item" itemscope itemtype="http://schema.org/Event">
++  <div class="media-body">
++
++    <h3 class="article-title mb-0 mt-0" itemprop="name">
++      <a href="{{ .RelPermalink }}" itemprop="url">{{ .Title }}</a>
++    </h3>
++
++    {{ $summary := "" }}
++    {{ if .Params.abstract_short }}
++      {{ $summary = .Params.abstract_short | markdownify }}
++    {{ else if .Params.abstract }}
++      {{ $summary = .Params.abstract | markdownify }}
++    {{ else if .Truncated }}
++      {{ $summary = .Summary }}
++    {{ end }}
++    {{ with $summary }}
++    <div class="article-style" itemprop="articleBody">
++      {{ . | truncate 135 }}
++    </div>
++    {{ end }}
++
++    <div class="stream-meta article-metadata">
++      <div>
++        {{ $date := .Params.time_start | default .Date }}
++        {{ $dateFormat := .Params.date_format | default $.Site.Params.date_format }}
++        {{ (time $date).Format $dateFormat }}
++        {{ if not .Params.all_day }}
++          {{ (time $date).Format ($.Site.Params.time_format | default "3:04 PM") }}
++          {{ with .Params.time_end }}
++            &mdash; {{ (time .).Format ($.Site.Params.time_format | default "3:04 PM") }}
++          {{ end }}
++        {{ end }}
++
++        {{ if .Params.event }}
++          <span class="middot-divider"></span> {{ .Params.event | markdownify }}
++        {{ else if .Params.event_short }}
++          <span class="middot-divider"></span> {{ .Params.event_short | markdownify }}
++        {{ end }}
++      </div>
++      <div itemprop="author">
++        {{ with .Params.authors }}
++        {{- delimit . ", " | markdownify -}}
++        {{- end -}}
++      </div>
++    </div>
++
++    <div class="btn-links">
++      {{ partial "page_links" (dict "content" . "is_list" 1) }}
++    </div>
++
++  </div>
++  <div class="ml-3">
++    {{ $resource := (.Resources.ByType "image").GetMatch "*featured*" }}
++    {{ with $resource }}
++    {{ $image := .Resize "150x" }}
++    <a href="{{ $.RelPermalink }}">
++      <img src="{{ $image.RelPermalink }}" itemprop="image">
++    </a>
++    {{end}}
++  </div>
++</div>
+diff --git a/layouts/talk/single.html b/layouts/talk/single.html
+new file mode 100644
+index 0000000..3b3fdec
+--- /dev/null
++++ b/layouts/talk/single.html
+@@ -0,0 +1,89 @@
++{{ partial "header.html" . }}
++{{ partial "navbar.html" . }}
++<div class="pub" itemscope itemtype="http://schema.org/Event">
++
++  {{ partial "page_header.html" . }}
++
++  <div class="article-container">
++
++    {{ if .Params.abstract }}
++      <h3>{{ i18n "abstract" }}</h3>
++      <p class="pub-abstract" itemprop="text">{{ .Params.abstract | markdownify }}</p>
++    {{ else }}
++      <br>
++    {{ end }}
++
++    <div class="row">
++      <div class="col-md-1"></div>
++      <div class="col-md-10">
++        <div class="row">
++          <div class="col-12 col-md-3 pub-row-heading">{{ i18n "date" }}</div>
++          <div class="col-12 col-md-9" itemprop="datePublished">
++            {{ $date := .Params.time_start | default .Date }}
++            {{ $dateFormat := .Params.date_format | default $.Site.Params.date_format }}
++            {{ (time $date).Format $dateFormat }}
++            <div class="talk-time">
++              {{ if not .Params.all_day }}
++                {{ (time $date).Format ($.Site.Params.time_format | default "3:04 PM") }}
++                {{ with .Params.time_end }}
++                  &mdash; {{ (time .).Format ($.Site.Params.time_format | default "3:04 PM") }}
++                {{ end }}
++              {{ end }}
++            </div>
++          </div>
++        </div>
++      </div>
++      <div class="col-md-1"></div>
++    </div>
++    <div class="d-md-none space-below"></div>
++
++    <div class="row">
++      <div class="col-md-1"></div>
++      <div class="col-md-10">
++        <div class="row">
++          <div class="col-12 col-md-3 pub-row-heading">{{ i18n "event" }}</div>
++          <div class="col-12 col-md-9">
++            {{ with .Params.event_url }}<a href="{{ . }}" target="_blank" rel="noopener">{{ end }}
++            {{ .Params.event | markdownify }}
++            {{ if .Params.event_url }}</a>{{ end }}
++          </div>
++        </div>
++      </div>
++      <div class="col-md-1"></div>
++    </div>
++    <div class="d-md-none space-below"></div>
++
++    {{ with .Params.location }}
++    <div class="row">
++      <div class="col-md-1"></div>
++      <div class="col-md-10">
++        <div class="row">
++          <div class="col-12 col-md-3 pub-row-heading">{{ i18n "location" }}</div>
++          <div class="col-12 col-md-9">{{ . | markdownify }}</div>
++        </div>
++      </div>
++      <div class="col-md-1"></div>
++    </div>
++    <div class="d-md-none space-below"></div>
++    {{ end }}
++
++    <div class="space-below"></div>
++
++    <div class="article-style">
++      {{ .Content }}
++    </div>
++
++    {{ partial "tags.html" . }}
++    {{ partial "page_author.html" . }}
++
++  </div>
++</div>
++
++{{ if .Site.Params.section_pager }}
++<div class="article-container article-widget">
++  {{ partial "section_pager.html" . }}
++</div>
++{{ end }}
++
++{{ partial "footer_container.html" . }}
++{{ partial "footer.html" . }}
